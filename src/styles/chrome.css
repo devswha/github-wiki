@@ -1,0 +1,60 @@
+.not-found-page {
+  padding: 18px;
+}
+
+.not-found-page h1 {
+  margin-top: 0;
+}
+
+.wiki-footer {
+  width: min(1236px, calc(100% - 44px));
+  margin: 0 auto 22px;
+  padding: 10px 12px;
+  border: 1px solid var(--wiki-border);
+  border-radius: 0;
+  background: var(--wiki-surface);
+  color: var(--wiki-muted);
+  font-size: 0.82rem;
+}
+
+.wiki-footer p {
+  margin: 0;
+}
+
+.wiki-footer p + p {
+  margin-top: 3px;
+}
+
+.floating-controls {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 15;
+  display: grid;
+  gap: 5px;
+}
+
+.floating-controls a {
+  width: 34px;
+  height: 34px;
+  min-height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0;
+  border: 1px solid var(--wiki-border);
+  border-radius: 2px;
+  background: #fbfbfb;
+  color: var(--wiki-text);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 10%);
+  cursor: pointer;
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.floating-controls a:hover {
+  border-color: var(--wiki-border-strong);
+  background: var(--wiki-surface-muted);
+  text-decoration: none;
+}

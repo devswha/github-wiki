@@ -1,0 +1,153 @@
+:root {
+  color-scheme: light;
+  --wiki-bg: #f5f5f5;
+  --wiki-surface: #ffffff;
+  --wiki-surface-muted: #f5f7f7;
+  --wiki-surface-blue: #f5fbfd;
+  --wiki-border: #d3d8d8;
+  --wiki-border-strong: #aebbbb;
+  --wiki-infobox-grid-border: #8f9b9b;
+  --wiki-text: #212529;
+  --wiki-muted: rgba(33, 37, 41, 0.75);
+  --wiki-link: #0275d8;
+  --wiki-link-active: #014c8c;
+  --wiki-link-external: #00766c;
+  --wiki-link-hover: #0263b8;
+  --wiki-link-missing: #c0392b;
+  --wiki-link-visited: #6f42c1;
+  --wiki-accent: #008276;
+  --wiki-accent-dark: #00766c;
+  --wiki-section: #64abd1;
+  --wiki-heading-border: #cccccc;
+  --wiki-target-bg: #fff8dc;
+  --wiki-target-border: #e5d19a;
+  --wiki-table-head-bg: #f1f4f4;
+  --wiki-table-row-alt: #fafbfb;
+  --wiki-card-bg: #fbfcfc;
+  --wiki-button-bg: #ffffff;
+  --wiki-button-hover: #eef3f3;
+  --wiki-warning: #8a5a12;
+  font-family:
+    "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", "Noto Sans CJK KR", NanumBarunGothic,
+    Roboto, "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", sans-serif, emoji;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  background: var(--wiki-bg);
+  color: var(--wiki-text);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --wiki-bg: #111213;
+  --wiki-surface: #1c1d1f;
+  --wiki-surface-muted: #242629;
+  --wiki-surface-blue: #20292d;
+  --wiki-border: #444444;
+  --wiki-border-strong: #5c5c5c;
+  --wiki-infobox-grid-border: #6f767d;
+  --wiki-text: #e0e0e0;
+  --wiki-muted: rgba(224, 224, 224, 0.72);
+  --wiki-link: #ec9f19;
+  --wiki-link-active: #f1b342;
+  --wiki-link-external: #74c7d7;
+  --wiki-link-hover: #bd7f14;
+  --wiki-link-missing: #ff8f8f;
+  --wiki-link-visited: #c9a4ff;
+  --wiki-accent: #008276;
+  --wiki-accent-dark: #006f68;
+  --wiki-section: #8ebbd1;
+  --wiki-heading-border: #383b40;
+  --wiki-target-bg: #312b1d;
+  --wiki-target-border: #5a4d2c;
+  --wiki-table-head-bg: #2b2d30;
+  --wiki-table-row-alt: #202225;
+  --wiki-card-bg: #202225;
+  --wiki-button-bg: #242629;
+  --wiki-button-hover: #303236;
+  --wiki-warning: #e8c06a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 0;
+  background: var(--wiki-bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 0;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--wiki-bg);
+  color: var(--wiki-text);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #1f6fff;
+  outline-offset: 2px;
+}
+
+a:link {
+  color: var(--wiki-link);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--wiki-link-visited);
+}
+
+a:hover {
+  color: var(--wiki-link-hover);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--wiki-link-active);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.wiki-shell {
+  min-width: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-main {
+  width: min(1236px, calc(100% - 44px));
+  flex: 0 0 auto;
+  margin: 18px auto 18px;
+}
+
+.wiki-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 900px) 250px;
+  gap: 12px;
+  align-items: start;
+  justify-content: start;
+}
+
+.wiki-content-column {
+  min-width: 0;
+}

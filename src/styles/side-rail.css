@@ -1,0 +1,61 @@
+.wiki-side-rail {
+  min-width: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.wiki-side-panel {
+  border: 1px solid var(--wiki-border);
+  background: var(--wiki-surface);
+}
+
+.wiki-side-panel h2 {
+  margin: 0;
+  padding: 7px 9px;
+  border-bottom: 1px solid var(--wiki-border);
+  background: var(--wiki-surface-muted);
+  color: var(--wiki-text);
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
+.wiki-side-panel ol,
+.wiki-side-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wiki-side-panel li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 7px;
+  align-items: center;
+  padding: 7px 9px;
+  font-size: 0.86rem;
+}
+
+.wiki-side-panel li + li {
+  border-top: 1px solid var(--wiki-border);
+}
+
+.wiki-side-panel li > span:first-child {
+  min-width: 18px;
+  color: var(--wiki-accent-dark);
+  font-weight: 800;
+  text-align: center;
+}
+
+.wiki-side-panel ul li {
+  grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.wiki-side-panel a {
+  overflow-wrap: anywhere;
+}
+
+.wiki-side-panel li > span:last-child {
+  color: var(--wiki-muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}

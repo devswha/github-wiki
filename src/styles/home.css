@@ -1,0 +1,90 @@
+.home-page {
+  overflow: hidden;
+}
+
+.home-welcome {
+  padding: 17px 14px 16px;
+  border-bottom: 1px solid var(--wiki-border);
+  text-align: center;
+}
+
+.home-welcome h2 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  font-weight: 650;
+}
+
+.home-welcome p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: var(--wiki-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.home-panel-grid {
+  display: block;
+  padding: 12px 14px 15px;
+}
+
+.home-panel {
+  min-width: 0;
+  border: 1px solid var(--wiki-border);
+  border-radius: 0;
+  background: var(--wiki-surface);
+}
+
+.home-panel + .home-panel {
+  margin-top: 10px;
+}
+
+.home-panel h2 {
+  margin: 0;
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--wiki-accent-dark);
+  background: var(--wiki-accent);
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+
+.home-panel ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-panel li {
+  display: grid;
+  grid-template-columns: minmax(0, 190px) minmax(0, 1fr);
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: 0.9rem;
+}
+
+.home-panel li + li {
+  border-top: 1px solid var(--wiki-border);
+}
+
+.home-panel a,
+.home-panel span,
+.home-panel p {
+  overflow-wrap: anywhere;
+}
+
+.home-panel span,
+.home-panel p {
+  color: var(--wiki-muted);
+  line-height: 1.45;
+}
+
+.home-panel .home-panel-label {
+  color: var(--wiki-text);
+  font-weight: 500;
+}
+
+.home-panel p {
+  margin: 0;
+  padding: 9px 10px;
+  font-size: 0.9rem;
+}
