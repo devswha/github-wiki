@@ -6,6 +6,7 @@ import { ohMyCodexArticle } from "./ohMyCodexArticle";
 import { ohMyOpenagentArticle } from "./ohMyOpenagentArticle";
 import { patinaArticle } from "./patinaArticle";
 import { sampleArticles } from "./sampleArticles";
+import { trendingRepositoriesArticle } from "./trendingRepositoriesArticle";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
@@ -14,6 +15,7 @@ export const wikiArticles: readonly WikiArticle[] = [
   ohMyCodexArticle,
   ohMyOpenagentArticle,
   patinaArticle,
+  trendingRepositoriesArticle,
   ...sampleArticles,
 ];
 
@@ -73,6 +75,26 @@ export const homePanels = [
       {
         label: "storybookjs/storybook",
         description: "Component documentation placeholder",
+      },
+    ],
+  },
+  {
+    title: "트렌딩 관찰",
+    items: [
+      {
+        label: "AI agent 후보",
+        href: "/w/Github.wiki%2Ftrending-repositories#agent-tools",
+        description: "GitHub search로 확인한 AI 에이전트와 agentic coding 후보",
+      },
+      {
+        label: "문서화 도구 후보",
+        href: "/w/Github.wiki%2Ftrending-repositories#documentation-tools",
+        description: "Storybook, Mermaid, Docusaurus 같은 문서화 계열 후보",
+      },
+      {
+        label: "운영 메모",
+        href: "/w/Github.wiki%2Ftrending-repositories#maintenance-notes",
+        description: "자동 점검에서 후보를 문서로 승격할 때 쓰는 기준",
       },
     ],
   },

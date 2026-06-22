@@ -16,6 +16,7 @@ const categoryLabels: Readonly<Record<string, string>> = {
   documentation: "문서화",
   project: "프로젝트",
   "repository-article": "저장소 문서",
+  trending: "트렌딩",
   "ui-framework": "UI 프레임워크",
   wiki: "위키",
 } as const;
