@@ -10,7 +10,7 @@ export const lazycodexArticle = {
     { label: "CLI 도구", path: "/w/category/cli-tool" },
   ],
   summary:
-    "LazyCodex는 OmO를 Codex용 agent harness로 설치하는 배포 레포이며, project memory, planning, orchestration, execution, verified completion을 한 번에 묶는다.",
+    "LazyCodex는 OmO를 Codex용 에이전트 도구로 설치하는 배포 레포이며, project memory, planning, orchestration, execution, verified completion을 한 번에 묶는다.",
   image: {
     src: "https://raw.githubusercontent.com/code-yeongyu/lazycodex/main/.github/assets/lazycodex-logo.png",
     alt: "lazycodex repository logo",
@@ -56,7 +56,7 @@ export const lazycodexArticle = {
       id: "overview",
       title: "배포 레포",
       body: [
-        "LazyCodex는 OmO(oh-my-openagent)를 Codex에서 바로 쓰기 좋게 포장한 배포 레포다. README의 표현을 빌리면 복잡한 코드베이스를 위한 agent harness이며, 프로젝트 메모리, 계획, 실행, 검증 완료를 Codex 안에 붙이는 쪽에 초점을 둔다.",
+        "LazyCodex는 OmO(oh-my-openagent)를 Codex에서 바로 쓰기 좋게 포장한 배포 레포다. README의 표현을 빌리면 복잡한 코드베이스를 위한 규율 에이전트 도구이며, 프로젝트 메모리, 계획, 실행, 검증 완료를 Codex 안에 붙이는 쪽에 초점을 둔다.",
         "이름은 LazyVim이 lazy.nvim을 다루기 쉽게 만든 구도를 Codex 쪽으로 옮긴 것에 가깝다. 핵심 엔진을 새로 설명하기보다, OmO의 명령과 스킬, 훅, 모델 라우팅을 한 번에 설치하는 입구 역할을 맡는다.",
       ],
       links: [
@@ -110,6 +110,8 @@ export const lazycodexArticle = {
         "레포 구조상 LazyCodex는 얇은 배포층이다. 루트에는 npm 패키지와 installer shim이 있고, src는 oh-my-openagent 서브모듈을 가리킨다. plugins/omo에는 Codex용 단일 플러그인 manifest, hooks, skills, components가 묶여 있다.",
         "웹 쪽은 packages/web 아래에 있다. README 기준으로 Next.js 15, Tailwind v4, opennextjs-cloudflare 조합이며 lazycodex.ai 배포를 위한 Cloudflare Workers 설정과 e2e 테스트가 들어 있다.",
         "따라서 lazycodex를 단순 CLI 패키지로만 보면 실제 역할을 작게 보게 된다. npm alias, Codex plugin bundle, OmO 서브모듈, 문서 사이트가 한 레포 안에서 같은 설치 경험을 구성한다.",
+        "plugins/omo 폴더에는 manifest와 함께 hooks.json이 들어가, Codex가 세션 시작이나 종료 같은 시점에 무엇을 실행할지 한 파일에서 읽는다.",
+        "설치가 zero-config를 지향하는 것도 이 구조 덕이다. 사용자가 설정 파일을 손으로 짜지 않아도 번들에 담긴 기본값이 그대로 붙는다.",
       ],
     },
     {
@@ -145,7 +147,8 @@ export const lazycodexArticle = {
       id: "position",
       title: "문서 사이트",
       body: [
-        "LazyCodex의 직접 경쟁 대상은 일반 문서 생성기나 단순 Codex 설정 파일이 아니다. 목표는 Codex 위에 팀형 agent harness를 얹어, 계획자, 실행자, 검토자, 도구 레이어가 같은 규칙으로 움직이게 하는 것이다.",
+        "LazyCodex의 직접 경쟁 대상은 일반 문서 생성기나 단순 Codex 설정 파일이 아니다. 목표는 Codex 위에 팀형 규율 에이전트를 얹어, 계획자, 실행자, 검토자, 도구 레이어가 같은 규칙으로 움직이게 하는 것이다.",
+        "정리하면 LazyCodex는 zero-config 설치로 규율 에이전트 묶음을 Codex 위에 얹는 입구이고, 실제 동작은 OmO 번들과 hooks.json 선언을 따라간다.",
         "README는 모델 라우팅도 주요 차별점으로 설명한다. 모든 작업을 항상 가장 무거운 모델로 보내는 대신, 빠른 작업과 깊은 추론 작업을 구분해 적절한 모델 체인을 고르는 설계라는 주장이다.",
       ],
     },

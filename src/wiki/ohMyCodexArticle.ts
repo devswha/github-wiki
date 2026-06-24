@@ -10,7 +10,7 @@ export const ohMyCodexArticle = {
     { label: "개발 워크플로우", path: "/w/category/developer-workflow" },
   ],
   summary:
-    "oh-my-codex는 OpenAI Codex CLI 위에 붙는 OMX workflow layer로, $deep-interview, $ralplan, $ultragoal과 .omx 상태 저장을 중심으로 Codex 작업을 구조화한다.",
+    "oh-my-codex는 OpenAI Codex CLI 위에 붙는 OMX 워크플로우 계층으로, $deep-interview, $ralplan, $ultragoal과 .omx 상태 저장을 중심으로 Codex 작업을 구조화한다.",
   image: {
     src: "https://yeachan-heo.github.io/oh-my-codex-website/omx-character-nobg.png",
     alt: "oh-my-codex character",
@@ -44,8 +44,11 @@ export const ohMyCodexArticle = {
       id: "overview",
       title: "Codex CLI 전제",
       body: [
-        "README는 Yeachan-Heo/oh-my-codex 저장소와 oh-my-codex npm 패키지를 공식 OMX 프로젝트와 설치 대상이라고 못박는다. 이 프로젝트는 OpenAI Codex CLI를 대체하지 않고, Codex를 실행 엔진으로 둔 workflow layer다.",
+        "README는 Yeachan-Heo/oh-my-codex 저장소와 oh-my-codex npm 패키지를 공식 OMX 프로젝트와 설치 대상이라고 못박는다. 이 프로젝트는 OpenAI Codex CLI를 대체하지 않고, Codex를 실행 엔진으로 둔 워크플로우 계층이다.",
         "OMX가 더해 주는 것은 강한 기본 세션, 일관된 workflow, role keyword와 skill 재사용, 그리고 .omx/ 아래의 plan, log, memory, runtime state 저장이다. README는 plain Codex만 원한다면 OMX가 필요 없을 수 있다고도 말한다.",
+        "릴리스 흐름이 빠른 편이라, README와 변경 로그는 v0.17.0 같은 버전 표기로 명령 표면과 기본값이 갱신된 시점을 구분한다.",
+        "설치 전후로 codex login status로 Codex 인증이 살아 있는지 확인하는 절차가 권장된다. OMX가 실제로 거는 것은 npm으로 깐 codex가 아니라 PATH에 있고 인증된 codex이기 때문이다.",
+        "세션 루프를 열지 않고 한 번만 돌리고 싶을 때는 omx exec로 단발 실행을 트리거할 수 있다.",
       ],
       links: [
         {
@@ -112,6 +115,9 @@ export const ohMyCodexArticle = {
       body: [
         "operator surface로는 omx doctor, omx update, omx hud --watch, omx team status/resume/shutdown, omx explore, omx sparkshell, omx wiki가 문서화되어 있다. README는 doctor가 local runtime wiring을 확인하지만 실제 Codex 인증 model call까지 증명하지는 않는다고 구분한다.",
         "wiki 기능은 omx wiki list/query/lint/refresh 같은 CLI-first JSON surface다. wiki data는 omx_wiki/ 아래 repository project knowledge로 저장되고, markdown-first와 search-first를 지향한다고 설명된다.",
+        "plugin layout에는 context-hooks도 들어가, 세션 컨텍스트가 만들어지는 시점에 필요한 정보를 끼워 넣거나 정리하는 지점을 연다.",
+        "omx hud --watch는 진행 상태를 실시간으로 띄우고, omx team status/resume/shutdown은 병렬 런타임을 다룬다.",
+        "정리하면 OMX는 Codex CLI를 엔진으로 두고 그 위에 일관된 작업 흐름과 .omx 상태, context-hooks를 얹는 보조 계층이다.",
       ],
       cards: [
         {

@@ -46,6 +46,8 @@ export const ohMyClaudecodeArticle = {
       body: [
         "oh-my-claudecode는 README에서 Claude Code를 위한 멀티 에이전트 오케스트레이션으로 소개된다. 같은 계열의 Codex 사용자는 oh-my-codex를 보라는 안내도 함께 둔다.",
         "핵심 사용 경험은 복잡한 명령을 외우기보다 원하는 일을 자연어로 말하고, 필요하면 deep-interview로 요구사항을 먼저 정리하는 흐름이다. Team Mode와 skill 기반 routing이 그 실행 표면을 이룬다.",
+        "에이전트 묶음도 큰 부분이다. 문서는 역할별로 나뉜 19개의 전문 에이전트가 리뷰, 보안, 프런트엔드, 문서 같은 작업을 나눠 맡는다고 정리한다.",
+        "hook 시스템은 11개 라이프사이클 지점에 걸려, 세션 시작과 종료, 도구 사용 전후 같은 시점에서 동작을 끼워 넣는다.",
       ],
       links: [
         {
@@ -94,6 +96,8 @@ export const ohMyClaudecodeArticle = {
       body: [
         "기능 표는 Team, omc team, ccg, Autopilot, Ultrawork, Ralph, Pipeline 같은 실행 모드를 나눈다. 각 모드는 완전 자율 개발, 병렬 수정, 지속 완료, 순차 처리처럼 서로 다른 작업 성격에 맞춰져 있다.",
         "개발자 경험 쪽에서는 magic keyword, HUD status bar, skill learning, analytics and cost tracking이 전면에 나온다. 아키텍처 문서는 hook, skill, agent, state 네 시스템이 사용자 입력에서 실행과 상태 추적으로 이어지는 흐름을 설명한다.",
+        "project-memory는 레포 단위로 누적되는 지식 계층으로, 다음 세션이 같은 맥락을 다시 읽지 않아도 되게 한다.",
+        "코드 탐색에는 AST-Grep 기반 구조 검색이 들어가, 단순 텍스트 매칭보다 구문 구조로 코드를 찾고 바꾼다.",
       ],
       cards: [
         {
@@ -122,6 +126,8 @@ export const ohMyClaudecodeArticle = {
       body: [
         "커스텀 스킬은 프로젝트 범위 .omc/skills와 사용자 범위 ~/.omc/skills 아래에 둘 수 있다. 프로젝트 스코프가 사용자 스코프보다 우선하고, 매칭되는 스킬은 수동 호출 없이 context에 자동으로 로드된다.",
         "유틸리티로는 rate limit reset 뒤 세션을 재개하는 wait 명령, Telegram/Discord/Slack stop callback tag 설정, OpenClaw gateway 연동이 문서화되어 있다. OpenClaw 연동은 session-start, stop, keyword-detector, ask-user-question, pre/post-tool-use 같은 이벤트를 gateway로 전달한다.",
+        "정리하면 OMC는 Claude Code 위에 Team Mode, 자연어 shortcut, 19개의 전문 에이전트, project-memory를 얹는 오케스트레이션 확장이다.",
+        "각 표면은 따로 떼어 쓰기보다, hook과 skill, agent, state 네 시스템이 맞물릴 때 제 역할을 한다.",
       ],
     },
     {

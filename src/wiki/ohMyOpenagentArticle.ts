@@ -77,6 +77,8 @@ export const ohMyOpenagentArticle = {
       body: [
         "하이라이트 표는 Discipline Agents, Team Mode, ultrawork, IntentGate, Hash-Anchored Edit Tool, LSP + AST-Grep, Background Agents, Built-in MCPs, Ralph Loop, Todo Enforcer, Comment Checker, Tmux Integration을 나열한다.",
         "README는 Claude Code compatibility도 강조한다. hook, command, skill, MCP, plugin을 그대로 동작시키는 호환성을 주장하고, skill-embedded MCPs는 필요한 task scope에서만 MCP server를 올렸다 내리는 방식으로 context budget 낭비를 줄인다고 설명한다.",
+        "모델 카탈로그는 models.dev 데이터를 참고해 카테고리별로 어떤 모델을 붙일지 매핑한다.",
+        "백그라운드 에이전트와 도구 출력은 NDJSON 스트림으로 흘러, 한 줄에 한 이벤트씩 파싱하기 쉽게 남는다.",
       ],
       table: {
         caption: "oh-my-openagent 주요 기능 축",
@@ -96,6 +98,7 @@ export const ohMyOpenagentArticle = {
       body: [
         "Team Mode는 리드 에이전트와 최대 8명의 병렬 멤버가 tmux 시각화와 전용 team_* 도구로 협업하는 opt-in 기능으로 설명된다. hyperplan과 security-research 같은 스킬이 이 팀 계층 위에서 동작한다.",
         "Agent orchestration에서는 모델을 직접 고르는 대신 visual-engineering, deep, quick, ultrabrain 같은 카테고리를 선택한다고 설명한다. 하네스가 카테고리를 적절한 모델로 매핑하므로 사용자가 매번 모델 선택을 관리하지 않아도 된다는 것이 문서의 주장이다.",
+        "Team Mode 통신은 team_* 도구로 이뤄지고, 멤버 작업은 task_create로 만들어 lead가 분배한다.",
       ],
     },
     {
@@ -104,6 +107,7 @@ export const ohMyOpenagentArticle = {
       body: [
         "도구 설명은 LSP, AST-Grep, Tmux, MCP를 실제 통합된 agent 도구로 나열한다. LSP는 rename, goto definition, find references, diagnostics를 포함하고, AST-Grep은 25개 언어의 pattern 기반 검색과 rewrite를 담당한다.",
         "Skills 섹션은 skill이 단순 prompt가 아니라 domain-tuned system instruction, on-demand MCP server, permission scope를 함께 가진다고 설명한다. builtin 예로 playwright, git-master, frontend-ui-ux가 나온다.",
+        "편집 도구는 hashline_edit 방식으로 LINE#ID 해시를 함께 받아, 줄이 밀려도 엉뚱한 위치를 고치지 않게 한다.",
       ],
       cards: [
         {
