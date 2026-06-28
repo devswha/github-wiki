@@ -5,7 +5,7 @@
   background: var(--wiki-surface);
   box-shadow: none;
   overflow-wrap: break-word;
-  word-break: normal;
+  word-break: break-all;
 }
 
 .article-body,
@@ -321,5 +321,9 @@
   font-size: 0.96rem;
   line-height: 1.5;
   overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.upstream-article .article-section p {
   word-break: normal;
 }

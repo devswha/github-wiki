@@ -29,8 +29,11 @@ export function ArticlePage(): ReactElement {
     return <NotFoundPage />;
   }
 
+  const isUpstreamArticle =
+    article.slug.startsWith("Yeachan-Heo/") || article.slug.startsWith("code-yeongyu/");
+
   return (
-    <article className="wiki-article">
+    <article className={`wiki-article${isUpstreamArticle ? " upstream-article" : ""}`}>
       <ArticleHeader modifiedAt={article.modifiedAt} title={article.title} />
       <CategoryStrip categories={article.categories} />
       <div className="article-layout">
