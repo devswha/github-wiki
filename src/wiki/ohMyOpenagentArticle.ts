@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-06-05T02:33:00.000Z",
+  modifiedAt: "2026-07-01T01:01:21.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -69,6 +69,7 @@ export const ohMyOpenagentArticle = {
         "README는 사람에게 설치 명령을 직접 외우게 하기보다 LLM 에이전트에게 installation guide URL을 붙여넣으라고 안내한다. LLM 에이전트용으로는 같은 guide를 curl로 받아 그대로 따르는 흐름도 적혀 있다.",
         "전환 기간 때문에 배포된 npm 패키지와 CLI binary 이름은 여전히 oh-my-opencode이며, oh-my-openagent binary도 같은 실행 파일에 연결된다. 설정 파일도 oh-my-openagent.json[c]와 기존 oh-my-opencode.json[c]가 모두 인식된다.",
         "익명 telemetry는 활성 설치 수 집계를 위해 기본 활성화되어 있고, 머신당 UTC 하루 최대 1회 전송된다고 문서화되어 있다. OMO_SEND_ANONYMOUS_TELEMETRY=0 또는 OMO_DISABLE_POSTHOG=1로 비활성화할 수 있다.",
+        "2026-07-01 v4.14.2 릴리스는 제거된 sparkshell prompt guidance가 설치된 Codex plugin cache로 승격되는 문제를 막기 위해 cache promotion 전에 prompt surface를 검사하는 guard를 추가했다.",
       ],
     },
     {

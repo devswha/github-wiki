@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const lazycodexArticle = {
   slug: "code-yeongyu/lazycodex",
   title: "lazycodex",
-  modifiedAt: "2026-06-04T15:20:00.000Z",
+  modifiedAt: "2026-07-01T01:01:21.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -92,6 +92,7 @@ export const lazycodexArticle = {
       body: [
         "설치 표면은 매우 좁다. README는 전역 설치나 npm i -g 대신 npx lazycodex-ai install 한 줄을 기본 경로로 제시한다. 완전 자율형, no-TUI 설정이 필요하면 --no-tui와 --codex-autonomous 옵션을 붙이는 흐름도 함께 안내한다.",
         "bin/lazycodex-ai.js는 자체 구현을 오래 끌고 가지 않는다. install 명령을 받으면 npx --yes --package oh-my-openagent omo install --platform=codex 형태로 넘기고, 그 외 인자는 omo 명령으로 전달하는 얇은 shim에 가깝다.",
+        "2026-07-01 v4.14.2 릴리스는 oh-my-openagent v4.14.2에서 Codex Light marketplace payload를 동기화한 배포다. 직전 v4.14.1과 비교한 marketplace sync로 기록되어 있다.",
       ],
       table: {
         caption: "LazyCodex 핵심 명령",

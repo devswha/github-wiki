@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-06-05T02:30:00.000Z",
+  modifiedAt: "2026-07-01T01:01:21.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -70,6 +70,7 @@ export const gajaeCodeArticle = {
         "README 기준으로 npm 패키지 이름은 gajae-code이고 설치되는 실행 파일은 gjc다. 권장 런타임 흐름은 Bun으로 전역 설치한 뒤 gjc --tmux로 tmux-backed 세션을 시작하는 방식이다.",
         "bare gjc는 tmux 세션을 만들거나 붙지 않고 직접 실행된다. 안전한 브랜치별 작업 공간이 필요할 때는 gjc --tmux --worktree <path>로 격리된 Git worktree 안에서 실행할 수 있다.",
         "세션 저장 위치는 GJC_CODING_AGENT_DIR로 정해지고 기본값은 ~/.gjc/agent다. 이 디렉터리 아래 agent.db에 세션 상태와 기록이 모인다.",
+        "2026-06-30 v0.7.8 릴리스는 prompt action, Telegram lifecycle command, local provider diagnostics, terminal bell notification, Windows/psmux 관련 수정, TUI render failure 격리를 함께 묶었다.",
       ],
     },
     {
