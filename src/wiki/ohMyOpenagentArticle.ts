@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-06-05T02:33:00.000Z",
+  modifiedAt: "2026-07-02T01:02:36.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -34,8 +34,8 @@ export const ohMyOpenagentArticle = {
     },
     {
       label: "Homepage",
-      value: "omo.vibetip.help/docs",
-      valueHref: "https://omo.vibetip.help/docs",
+      value: "omo.dev",
+      valueHref: "https://omo.dev",
     },
     { label: "Links", value: "" },
   ],
@@ -45,7 +45,7 @@ export const ohMyOpenagentArticle = {
       title: "하네스 전환",
       body: [
         "README.ko는 oh-my-openagent를 Claude Code, Codex, OSS 모델까지 오케스트레이션하려는 에이전트 하네스로 소개한다. 설치 후 ultrawork 또는 ulw를 입력하는 것을 핵심 진입점처럼 제시한다.",
-        "문서 첫머리에는 OpenCode, Codex, Pi 등 여러 하네스를 지원하기 위한 다중 하네스 리팩터링이 진행 중이라는 공지가 있다. manifesto는 프로젝트 이름이 oh-my-opencode에서 oh-my-openagent로 이동했고, 전환 기간에는 두 이름이 함께 쓰인다고 설명한다.",
+        "문서 첫머리에는 OmO for Codex 출시 안내와 OpenCode, Codex, Pi 등 여러 하네스를 지원하기 위한 다중 하네스 리팩터링 공지가 함께 있다. manifesto는 프로젝트 이름이 oh-my-opencode에서 oh-my-openagent로 이동했고, 전환 기간에는 두 이름이 함께 쓰인다고 설명한다.",
       ],
       links: [
         {
@@ -79,6 +79,7 @@ export const ohMyOpenagentArticle = {
         "README는 Claude Code compatibility도 강조한다. hook, command, skill, MCP, plugin을 그대로 동작시키는 호환성을 주장하고, skill-embedded MCPs는 필요한 task scope에서만 MCP server를 올렸다 내리는 방식으로 context budget 낭비를 줄인다고 설명한다.",
         "모델 카탈로그는 models.dev 데이터를 참고해 카테고리별로 어떤 모델을 붙일지 매핑한다.",
         "백그라운드 에이전트와 도구 출력은 NDJSON 스트림으로 흘러, 한 줄에 한 이벤트씩 파싱하기 쉽게 남는다.",
+        "저장소 메타데이터 기준 최신 릴리스는 v4.15.1이다. 2026-07-01 최근 커밋은 LazyCodex marketplace cache repair와 designpowers reference skill 노출 방지처럼 Codex 배포 표면의 정리 작업이 눈에 띈다.",
       ],
       table: {
         caption: "oh-my-openagent 주요 기능 축",

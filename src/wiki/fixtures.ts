@@ -4,6 +4,7 @@ import { lazycodexArticle } from "./lazycodexArticle";
 import { ohMyClaudecodeArticle } from "./ohMyClaudecodeArticle";
 import { ohMyCodexArticle } from "./ohMyCodexArticle";
 import { ohMyOpenagentArticle } from "./ohMyOpenagentArticle";
+import { omnigentArticle } from "./omnigentArticle";
 import { patinaArticle } from "./patinaArticle";
 import { sampleArticles } from "./sampleArticles";
 
@@ -13,6 +14,7 @@ export const wikiArticles: readonly WikiArticle[] = [
   ohMyClaudecodeArticle,
   ohMyCodexArticle,
   ohMyOpenagentArticle,
+  omnigentArticle,
   patinaArticle,
   ...sampleArticles,
 ];
@@ -40,6 +42,11 @@ export const homePanels = [
         label: "Yeachan-Heo/oh-my-codex",
         href: "/w/Yeachan-Heo%2Foh-my-codex",
         description: "OpenAI Codex CLI용 OMX workflow layer",
+      },
+      {
+        label: "omnigent-ai/omnigent",
+        href: "/w/omnigent-ai%2Fomnigent",
+        description: "여러 AI agent를 묶는 open-source meta-harness",
       },
       {
         label: "code-yeongyu/oh-my-openagent",

@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const patinaArticle = {
   slug: "devswha/patina",
   title: "patina",
-  modifiedAt: "2026-06-04T10:00:00.000Z",
+  modifiedAt: "2026-07-02T01:02:36.000Z",
   categories: [
     { label: "문서화", path: "/w/category/documentation" },
     { label: "AI 글쓰기 도구", path: "/w/category/ai-writing-tool" },
@@ -140,7 +140,8 @@ export const patinaArticle = {
       title: "벤치마크",
       body: [
         "README는 2026-05-22 최신 모델 리베이스라인에서 KO+EN 기준 편집 핫스팟 catch 67.3%와 사람 글 컨트롤 오탐 16.0%를 제시한다. 이 수치는 일반 탐지기 성능표라기보다, 편집할 구간을 얼마나 잡아내는지에 대한 프로젝트 내부 기준에 가깝다.",
-        "체크인된 suspect-zone 벤치마크의 latest.md는 2026-06-03 생성 리포트에서 39개 fixture, 4개 언어, 전체 정확도 100.0%를 기록한다. 하지만 문서 자신도 이 결과가 작은 fixture corpus에 대한 회귀 체크일 뿐, 실제 글의 작성자를 판정하는 증거는 아니라고 선을 긋는다.",
+        "체크인된 suspect-zone 벤치마크의 latest.md는 2026-06-14 생성 리포트에서 49개 fixture, 4개 언어, 전체 정확도 100.0% [92.7%–100.0%]를 기록한다. 하지만 문서 자신도 이 결과가 작은 fixture corpus에 대한 회귀 체크일 뿐, 실제 글의 작성자를 판정하는 증거는 아니라고 선을 긋는다.",
+        "2026-07-01 커밋 흐름에서는 XLIFF 1.2 target segment를 rewrite/verify pipeline으로 humanize하는 --xliff 모드와, 여러 파일에 반복되는 segment를 target-language+text 단위로 batch dedup하는 기능이 추가됐다.",
       ],
     },
     {

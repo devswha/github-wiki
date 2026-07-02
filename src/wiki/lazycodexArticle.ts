@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const lazycodexArticle = {
   slug: "code-yeongyu/lazycodex",
   title: "lazycodex",
-  modifiedAt: "2026-06-04T15:20:00.000Z",
+  modifiedAt: "2026-07-02T01:02:36.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -58,6 +58,7 @@ export const lazycodexArticle = {
       body: [
         "LazyCodex는 OmO(oh-my-openagent)를 Codex에서 바로 쓰기 좋게 포장한 배포 레포다. README의 표현을 빌리면 복잡한 코드베이스를 위한 규율 에이전트 도구이며, 프로젝트 메모리, 계획, 실행, 검증 완료를 Codex 안에 붙이는 쪽에 초점을 둔다.",
         "이름은 LazyVim이 lazy.nvim을 다루기 쉽게 만든 구도를 Codex 쪽으로 옮긴 것에 가깝다. 핵심 엔진을 새로 설명하기보다, OmO의 명령과 스킬, 훅, 모델 라우팅을 한 번에 설치하는 입구 역할을 맡는다.",
+        "README 첫머리는 OmO 60K stars 맥락을 내세우며, 저장소 메타데이터 기준 최신 릴리스는 v4.15.1이다.",
       ],
       links: [
         {
@@ -112,6 +113,7 @@ export const lazycodexArticle = {
         "따라서 lazycodex를 단순 CLI 패키지로만 보면 실제 역할을 작게 보게 된다. npm alias, Codex plugin bundle, OmO 서브모듈, 문서 사이트가 한 레포 안에서 같은 설치 경험을 구성한다.",
         "plugins/omo 폴더에는 manifest와 함께 hooks.json이 들어가, Codex가 세션 시작이나 종료 같은 시점에 무엇을 실행할지 한 파일에서 읽는다.",
         "설치가 zero-config를 지향하는 것도 이 구조 덕이다. 사용자가 설정 파일을 손으로 짜지 않아도 번들에 담긴 기본값이 그대로 붙는다.",
+        "2026-06-29부터 2026-07-01까지 최근 main 커밋은 v4.14.0에서 v4.15.1까지 Codex marketplace 동기화가 대부분이다.",
       ],
     },
     {

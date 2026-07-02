@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-06-05T02:31:00.000Z",
+  modifiedAt: "2026-07-02T01:02:36.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -34,8 +34,8 @@ export const ohMyClaudecodeArticle = {
     },
     {
       label: "Homepage",
-      value: "oh-my-claudecode website",
-      valueHref: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+      value: "oh-my-claudecode.dev",
+      valueHref: "https://oh-my-claudecode.dev",
     },
     { label: "Links", value: "" },
   ],
@@ -48,6 +48,7 @@ export const ohMyClaudecodeArticle = {
         "핵심 사용 경험은 복잡한 명령을 외우기보다 원하는 일을 자연어로 말하고, 필요하면 deep-interview로 요구사항을 먼저 정리하는 흐름이다. Team Mode와 skill 기반 routing이 그 실행 표면을 이룬다.",
         "에이전트 묶음도 큰 부분이다. 문서는 역할별로 나뉜 19개의 전문 에이전트가 리뷰, 보안, 프런트엔드, 문서 같은 작업을 나눠 맡는다고 정리한다.",
         "hook 시스템은 11개 라이프사이클 지점에 걸려, 세션 시작과 종료, 도구 사용 전후 같은 시점에서 동작을 끼워 넣는다.",
+        "저장소 메타데이터 기준 최신 릴리스는 v4.15.1이며, 해당 릴리스는 dev의 fix/chore 커밋을 main으로 합친 유지보수 릴리스로 표시된다.",
       ],
       links: [
         {
@@ -58,7 +59,7 @@ export const ohMyClaudecodeArticle = {
         },
         {
           description: "공식 문서 사이트로 이어지는 외부 링크다.",
-          href: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+          href: "https://oh-my-claudecode.dev",
           label: "문서 사이트",
           variant: "external",
         },
@@ -98,6 +99,7 @@ export const ohMyClaudecodeArticle = {
         "개발자 경험 쪽에서는 magic keyword, HUD status bar, skill learning, analytics and cost tracking이 전면에 나온다. 아키텍처 문서는 hook, skill, agent, state 네 시스템이 사용자 입력에서 실행과 상태 추적으로 이어지는 흐름을 설명한다.",
         "project-memory는 레포 단위로 누적되는 지식 계층으로, 다음 세션이 같은 맥락을 다시 읽지 않아도 되게 한다.",
         "코드 탐색에는 AST-Grep 기반 구조 검색이 들어가, 단순 텍스트 매칭보다 구문 구조로 코드를 찾고 바꾼다.",
+        "최근 main 커밋 흐름에서는 submodule 안 worktree의 .omc state anchor 수정, CI benchmark envelope 조정, dist/bridge build artifact PR guard 추가처럼 운영 안정성과 기여 규칙을 다듬는 변경이 보인다.",
       ],
       cards: [
         {

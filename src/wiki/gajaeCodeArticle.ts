@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-06-05T02:30:00.000Z",
+  modifiedAt: "2026-07-02T01:02:36.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -34,8 +34,8 @@ export const gajaeCodeArticle = {
     },
     {
       label: "Homepage",
-      value: "gaebal-gajae.dev",
-      valueHref: "https://gaebal-gajae.dev/",
+      value: "gajae-code.com",
+      valueHref: "https://gajae-code.com",
     },
     { label: "Links", value: "" },
   ],
@@ -47,6 +47,7 @@ export const gajaeCodeArticle = {
         "Gajae-Code는 README 첫머리에서 실험적이고 베타 단계인 초기 프로젝트라고 밝힌다. 중요한 작업에 의존하기 전에 출력 검증이 필요하다는 주의가 함께 붙어 있다.",
         "프로젝트 설명은 red-claw 코딩 에이전트다. 인터뷰, 계획, tmux 기반 실행, 검증을 한 흐름으로 묶고, 이전 OpenAI/Anthropic 코드 하니스 경험에서 남은 반복 루프를 작게 정리한 쪽에 가깝다.",
         "베타라는 표시는 기능이 빠졌다는 뜻보다, 출력과 실행 증거를 사람이 한 번 더 확인하는 전제를 둔다는 쪽에 가깝다.",
+        "README는 공식 사이트를 gajae-code.com으로 안내하고, 저장소 메타데이터 기준 최신 릴리스는 v0.7.9다.",
       ],
       links: [
         {
@@ -107,6 +108,7 @@ export const gajaeCodeArticle = {
         "README는 session auto-retry와 provider retry budget을 별도 계층으로 설명한다. requestMaxRetries는 stream이 열리기 전 provider SDK/fetch 재시도에, streamMaxRetries는 replay-safe stream 실패에 쓰인다.",
         "개발 문서에서는 workflow definition이나 rebrand surface 변경 시 visible definition, gate 검증, rebrand inventory, default definition 테스트를 실행하라고 안내한다. 즉 이 프로젝트의 기본값은 소스에 포함된 정의와 검증 gate를 함께 유지하는 방식이다.",
         "실행 로그는 append-only로 쌓여서, 세션이 중간에 끊겨도 replay-safe하게 같은 지점에서 이어진다.",
+        "2026-07-01 최근 커밋은 0.7.9 버전 bump와 함께 TUI/custom editor의 Enter submit 동작을 0.7.8 형태로 되돌리는 회귀 수정이 중심이다.",
       ],
     },
     {
