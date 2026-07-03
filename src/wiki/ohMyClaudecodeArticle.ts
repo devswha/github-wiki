@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-06-05T02:31:00.000Z",
+  modifiedAt: "2026-07-03T01:10:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -34,8 +34,8 @@ export const ohMyClaudecodeArticle = {
     },
     {
       label: "Homepage",
-      value: "oh-my-claudecode website",
-      valueHref: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+      value: "oh-my-claudecode.dev",
+      valueHref: "https://oh-my-claudecode.dev",
     },
     { label: "Links", value: "" },
   ],
@@ -58,7 +58,7 @@ export const ohMyClaudecodeArticle = {
         },
         {
           description: "공식 문서 사이트로 이어지는 외부 링크다.",
-          href: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+          href: "https://oh-my-claudecode.dev",
           label: "문서 사이트",
           variant: "external",
         },
@@ -77,7 +77,7 @@ export const ohMyClaudecodeArticle = {
       title: "협업 모드",
       body: [
         "README.ko는 v4.1.7부터 Team이 OMC의 표준 오케스트레이션 방식이라고 설명한다. 기본 파이프라인은 team-plan, team-prd, team-exec, team-verify, team-fix loop 순서로 제시된다.",
-        "v4.4.0 이후 Codex와 Gemini 작업은 MCP 서버 대신 tmux CLI worker로 실행하는 방향을 안내한다. omc team N:codex, omc team N:gemini, omc team N:claude 표면이 있고, /ccg는 Codex와 Gemini 조언을 Claude가 통합하는 shortcut이다.",
+        "v4.4.0 이후 Codex와 Gemini 작업은 MCP 서버 대신 tmux CLI worker로 실행하는 방향을 안내한다. omc team N:codex, omc team N:gemini, omc team N:claude 표면이 있고, /ccg는 Codex와 Gemini 조언을 Claude가 통합하는 shortcut이다. 2026-06-27 v4.15.1 릴리스 직전에는 worktree 상태를 git submodule이 아니라 superproject에 고정하는 수정도 들어갔다.",
       ],
       table: {
         caption: "oh-my-claudecode 실행 표면",

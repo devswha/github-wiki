@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-06-05T02:30:00.000Z",
+  modifiedAt: "2026-07-03T01:10:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -46,7 +46,7 @@ export const gajaeCodeArticle = {
       body: [
         "Gajae-Code는 README 첫머리에서 실험적이고 베타 단계인 초기 프로젝트라고 밝힌다. 중요한 작업에 의존하기 전에 출력 검증이 필요하다는 주의가 함께 붙어 있다.",
         "프로젝트 설명은 red-claw 코딩 에이전트다. 인터뷰, 계획, tmux 기반 실행, 검증을 한 흐름으로 묶고, 이전 OpenAI/Anthropic 코드 하니스 경험에서 남은 반복 루프를 작게 정리한 쪽에 가깝다.",
-        "베타라는 표시는 기능이 빠졌다는 뜻보다, 출력과 실행 증거를 사람이 한 번 더 확인하는 전제를 둔다는 쪽에 가깝다.",
+        "베타라는 표시는 기능이 빠졌다는 뜻보다, 출력과 실행 증거를 사람이 한 번 더 확인하는 전제를 둔다는 쪽에 가깝다. 2026-07-02 v0.7.10 릴리스 근처 변경은 changelog backfill, git-daemon 문서 note, Cargo workspace 제외 같은 운영 정리에 집중되어 있다.",
       ],
       links: [
         {

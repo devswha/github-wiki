@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-06-05T02:33:00.000Z",
+  modifiedAt: "2026-07-03T01:10:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -34,8 +34,8 @@ export const ohMyOpenagentArticle = {
     },
     {
       label: "Homepage",
-      value: "omo.vibetip.help/docs",
-      valueHref: "https://omo.vibetip.help/docs",
+      value: "omo.dev",
+      valueHref: "https://omo.dev",
     },
     { label: "Links", value: "" },
   ],
@@ -46,6 +46,7 @@ export const ohMyOpenagentArticle = {
       body: [
         "README.ko는 oh-my-openagent를 Claude Code, Codex, OSS 모델까지 오케스트레이션하려는 에이전트 하네스로 소개한다. 설치 후 ultrawork 또는 ulw를 입력하는 것을 핵심 진입점처럼 제시한다.",
         "문서 첫머리에는 OpenCode, Codex, Pi 등 여러 하네스를 지원하기 위한 다중 하네스 리팩터링이 진행 중이라는 공지가 있다. manifesto는 프로젝트 이름이 oh-my-opencode에서 oh-my-openagent로 이동했고, 전환 기간에는 두 이름이 함께 쓰인다고 설명한다.",
+        "2026-07-01 v4.15.1 릴리스 뒤에도 dev 브랜치에서는 ultrawork skill pointer를 standalone injection과 Codex plugin 쪽에 맞추는 커밋이 이어졌다. 최근 변경은 새 기능 소개보다 하네스별 주입 표면을 작게 고정하는 쪽에 가깝다.",
       ],
       links: [
         {

@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const lazycodexArticle = {
   slug: "code-yeongyu/lazycodex",
   title: "lazycodex",
-  modifiedAt: "2026-06-04T15:20:00.000Z",
+  modifiedAt: "2026-07-03T01:10:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -57,6 +57,7 @@ export const lazycodexArticle = {
       title: "배포 레포",
       body: [
         "LazyCodex는 OmO(oh-my-openagent)를 Codex에서 바로 쓰기 좋게 포장한 배포 레포다. README의 표현을 빌리면 복잡한 코드베이스를 위한 규율 에이전트 도구이며, 프로젝트 메모리, 계획, 실행, 검증 완료를 Codex 안에 붙이는 쪽에 초점을 둔다.",
+        "릴리스는 OmO 계열과 맞춰 빠르게 동기화된다. GitHub 릴리스 기준 2026-07-01 v4.15.1이 공개됐고, 최근 main 커밋도 Codex marketplace v4.14.x에서 v4.15.1까지의 sync 작업이 대부분이다.",
         "이름은 LazyVim이 lazy.nvim을 다루기 쉽게 만든 구도를 Codex 쪽으로 옮긴 것에 가깝다. 핵심 엔진을 새로 설명하기보다, OmO의 명령과 스킬, 훅, 모델 라우팅을 한 번에 설치하는 입구 역할을 맡는다.",
       ],
       links: [
