@@ -96,8 +96,22 @@ export const gajaeCodeArticle = {
       title: "패키지 배치",
       body: [
         "codebase overview는 주 제품 영역이 packages/coding-agent라고 설명한다. 이 패키지가 gjc CLI와 제품 런타임을 맡고, setup, deep-interview, ralplan, ultragoal, team 같은 명령을 등록한다.",
-        "packages/ai는 provider와 model 경계를 담당하고, packages/agent는 상태형 agent runtime을 제공한다. packages/tui는 터미널 UI를 담당하며, packages/natives와 Rust crates는 N-API 기반 native helper 계층을 제공한다.",
-        "provider 인증은 auth-broker 계층이 모델별 자격증명을 중개하고, 코딩 세션 자체에는 토큰을 그대로 넘기지 않는다.",
+      ],
+      subsections: [
+        {
+          id: "structure-boundaries",
+          title: "패키지 경계",
+          body: [
+            "packages/ai는 provider와 model 경계를 담당하고, packages/agent는 상태형 agent runtime을 제공한다. packages/tui는 터미널 UI를 담당하며, packages/natives와 Rust crates는 N-API 기반 native helper 계층을 제공한다.",
+          ],
+        },
+        {
+          id: "structure-auth",
+          title: "provider 인증",
+          body: [
+            "provider 인증은 auth-broker 계층이 모델별 자격증명을 중개하고, 코딩 세션 자체에는 토큰을 그대로 넘기지 않는다.",
+          ],
+        },
       ],
     },
     {

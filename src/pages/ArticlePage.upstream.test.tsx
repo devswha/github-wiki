@@ -18,6 +18,8 @@ const upstreamArticleCases = [
       "gjc 실행 방식",
       "작업 루프",
       "패키지 배치",
+      "패키지 경계",
+      "provider 인증",
       "재시도와 검증",
       "운영 전제",
     ],
@@ -33,6 +35,8 @@ const upstreamArticleCases = [
       "배포 레포",
       "설치 진입점",
       "OmO 위임 구조",
+      "hooks.json",
+      "zero-config 설치",
       "플러그인 묶음",
       "문서 사이트",
       "맞는 사용처",
@@ -47,6 +51,8 @@ const upstreamArticleCases = [
     sourceTerms: ["19개의 전문 에이전트", "11개 라이프사이클", "project-memory", "AST-Grep"],
     expectedToc: [
       "Claude Code 플러그인",
+      "전문 에이전트",
+      "hook 라이프사이클",
       "설치 이름",
       "협업 모드",
       "명령 표면",
@@ -63,6 +69,8 @@ const upstreamArticleCases = [
     sourceTerms: ["codex login status", "context-hooks", "omx exec", "v0.17.0"],
     expectedToc: [
       "Codex CLI 전제",
+      "인증 확인",
+      "단발 실행",
       "OMX 설치",
       "스토리형 워크플로우",
       "플러그인 런타임",
@@ -80,6 +88,8 @@ const upstreamArticleCases = [
     expectedToc: [
       "하네스 전환",
       "설치 가이드 흐름",
+      "패키지와 설정 이름",
+      "익명 telemetry",
       "내장 기능 지도",
       "Team Mode와 모델",
       "도구 계층",
@@ -115,16 +125,30 @@ function articleText(article: WikiArticle): string {
       ...(section.links?.map((link) => `${link.label} ${link.description ?? ""}`) ?? []),
       ...(section.cards?.map((card) => `${card.title} ${card.body}`) ?? []),
       ...(section.table?.rows.flatMap((row) => row) ?? []),
+      ...(section.subsections?.flatMap((subsection) => [
+        subsection.title,
+        ...subsection.body.map(bodyBlockText),
+        ...(subsection.table?.rows.flatMap((row) => row) ?? []),
+      ]) ?? []),
     ]),
   ].join(" ");
 }
 
 function paragraphCount(article: WikiArticle): number {
-  return article.sections.reduce(
-    (total, section) =>
-      total + section.body.filter((block) => typeof block === "string").length,
-    0,
-  );
+  return article.sections.reduce((total, section) => {
+    const sectionParagraphs = section.body.filter(
+      (block) => typeof block === "string",
+    ).length;
+    const subsectionParagraphs =
+      section.subsections?.reduce(
+        (subTotal, subsection) =>
+          subTotal +
+          subsection.body.filter((block) => typeof block === "string").length,
+        0,
+      ) ?? 0;
+
+    return total + sectionParagraphs + subsectionParagraphs;
+  }, 0);
 }
 
 const patinaBannedFragments = [

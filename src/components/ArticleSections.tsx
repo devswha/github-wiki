@@ -3,6 +3,7 @@ import type { ReactElement } from "react";
 import type {
   ArticleBodyBlock,
   ArticleSection,
+  ArticleSubsection,
   WikiCard,
   WikiLink,
   WikiTable,
@@ -88,6 +89,32 @@ function renderBodyBlock(block: ArticleBodyBlock): ReactElement {
   );
 }
 
+function renderSubsection(
+  subsection: ArticleSubsection,
+  sectionNumber: number,
+  subsectionNumber: number,
+): ReactElement {
+  return (
+    <section
+      className="article-subsection"
+      id={subsection.id}
+      key={subsection.id}
+    >
+      <h3>
+        <a className="section-number-link" href={`#${subsection.id}`}>
+          {sectionNumber}.{subsectionNumber}.
+        </a>{" "}
+        {subsection.title}
+      </h3>
+      {subsection.body.map(renderBodyBlock)}
+      {subsection.links === undefined ? null : (
+        <ul className="article-link-list">{subsection.links.map(renderLink)}</ul>
+      )}
+      {subsection.table === undefined ? null : renderTable(subsection.table)}
+    </section>
+  );
+}
+
 export function ArticleSections({ sections }: ArticleSectionsProps): ReactElement {
   return (
     <div className="article-sections">
@@ -109,6 +136,9 @@ export function ArticleSections({ sections }: ArticleSectionsProps): ReactElemen
           {section.table === undefined ? null : renderTable(section.table)}
           {section.cards === undefined ? null : (
             <div className="article-card-grid">{section.cards.map(renderCard)}</div>
+          )}
+          {section.subsections?.map((subsection, subIndex) =>
+            renderSubsection(subsection, index + 1, subIndex + 1),
           )}
         </section>
       ))}

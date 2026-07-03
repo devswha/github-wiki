@@ -12,13 +12,31 @@ export function TableOfContents({
   return (
     <nav aria-label="목차" className="toc">
       <strong>목차</strong>
-      <ol>
-        {sections.map((section) => (
-          <li key={section.id}>
-            <a href={`#${section.id}`}>{section.title}</a>
+      <ul className="toc-tree">
+        {sections.map((section, index) => (
+          <li className="toc-item" key={section.id}>
+            <span className="toc-entry">
+              <span className="toc-number">{index + 1}.</span>
+              <a href={`#${section.id}`}>{section.title}</a>
+            </span>
+            {section.subsections === undefined ||
+            section.subsections.length === 0 ? null : (
+              <ul className="toc-tree toc-subtree">
+                {section.subsections.map((subsection, subIndex) => (
+                  <li className="toc-item" key={subsection.id}>
+                    <span className="toc-entry">
+                      <span className="toc-number">
+                        {index + 1}.{subIndex + 1}.
+                      </span>
+                      <a href={`#${subsection.id}`}>{subsection.title}</a>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
           </li>
         ))}
-      </ol>
+      </ul>
     </nav>
   );
 }

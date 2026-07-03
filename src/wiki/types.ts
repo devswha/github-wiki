@@ -47,12 +47,21 @@ export type ArticleListBlock = {
 
 export type ArticleBodyBlock = string | ArticleListBlock;
 
+export type ArticleSubsection = {
+  readonly id: string;
+  readonly title: string;
+  readonly body: readonly ArticleBodyBlock[];
+  readonly links?: readonly WikiLink[];
+  readonly table?: WikiTable;
+};
+
 export type ArticleSection = {
   readonly id: string;
   readonly title: string;
   readonly body: readonly ArticleBodyBlock[];
   readonly cards?: readonly WikiCard[];
   readonly links?: readonly WikiLink[];
+  readonly subsections?: readonly ArticleSubsection[];
   readonly table?: WikiTable;
 };
 

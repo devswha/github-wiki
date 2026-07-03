@@ -110,8 +110,22 @@ export const lazycodexArticle = {
         "레포 구조상 LazyCodex는 얇은 배포층이다. 루트에는 npm 패키지와 installer shim이 있고, src는 oh-my-openagent 서브모듈을 가리킨다. plugins/omo에는 Codex용 단일 플러그인 manifest, hooks, skills, components가 묶여 있다.",
         "웹 쪽은 packages/web 아래에 있다. README 기준으로 Next.js 15, Tailwind v4, opennextjs-cloudflare 조합이며 lazycodex.ai 배포를 위한 Cloudflare Workers 설정과 e2e 테스트가 들어 있다.",
         "따라서 lazycodex를 단순 CLI 패키지로만 보면 실제 역할을 작게 보게 된다. npm alias, Codex plugin bundle, OmO 서브모듈, 문서 사이트가 한 레포 안에서 같은 설치 경험을 구성한다.",
-        "plugins/omo 폴더에는 manifest와 함께 hooks.json이 들어가, Codex가 세션 시작이나 종료 같은 시점에 무엇을 실행할지 한 파일에서 읽는다.",
-        "설치가 zero-config를 지향하는 것도 이 구조 덕이다. 사용자가 설정 파일을 손으로 짜지 않아도 번들에 담긴 기본값이 그대로 붙는다.",
+      ],
+      subsections: [
+        {
+          id: "structure-hooks",
+          title: "hooks.json",
+          body: [
+            "plugins/omo 폴더에는 manifest와 함께 hooks.json이 들어가, Codex가 세션 시작이나 종료 같은 시점에 무엇을 실행할지 한 파일에서 읽는다.",
+          ],
+        },
+        {
+          id: "structure-zeroconfig",
+          title: "zero-config 설치",
+          body: [
+            "설치가 zero-config를 지향하는 것도 이 구조 덕이다. 사용자가 설정 파일을 손으로 짜지 않아도 번들에 담긴 기본값이 그대로 붙는다.",
+          ],
+        },
       ],
     },
     {
