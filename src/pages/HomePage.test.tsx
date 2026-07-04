@@ -21,6 +21,7 @@ describe("HomePage", () => {
   it("links every sourced upstream repository from the recent panel", () => {
     // Given
     const expectedLinks = [
+      ["NousResearch/hermes-agent", "/w/NousResearch%2Fhermes-agent"],
       ["Yeachan-Heo/gajae-code", "/w/Yeachan-Heo%2Fgajae-code"],
       ["code-yeongyu/lazycodex", "/w/code-yeongyu%2Flazycodex"],
       ["Yeachan-Heo/oh-my-claudecode", "/w/Yeachan-Heo%2Foh-my-claudecode"],

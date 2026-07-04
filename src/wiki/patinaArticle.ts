@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const patinaArticle = {
   slug: "devswha/patina",
   title: "patina",
-  modifiedAt: "2026-06-04T10:00:00.000Z",
+  modifiedAt: "2026-07-04T01:02:58.000Z",
   categories: [
     { label: "문서화", path: "/w/category/documentation" },
     { label: "AI 글쓰기 도구", path: "/w/category/ai-writing-tool" },
@@ -32,6 +32,11 @@ export const patinaArticle = {
       label: "Homepage",
       value: "patina.vibetip.help",
       valueHref: "https://patina.vibetip.help",
+    },
+    {
+      label: "Latest release",
+      value: "v6.1.0 — persona hardening",
+      valueHref: "https://github.com/devswha/patina/releases/tag/v6.1.0",
     },
     {
       label: "Links",
@@ -96,6 +101,7 @@ export const patinaArticle = {
         "프로젝트는 패턴 팩, 프로필, 스코어링, 스타일로메트리, 재작성 백엔드, 벤치마크 문서로 나뉜다. 패턴 팩은 언어 접두사로 자동 탐색되며, 프로필은 blog, academic, technical, release-notes, namuwiki처럼 출력 톤을 조절한다.",
         "namuwiki 프로필은 한국어 전용 위키풍 설명을 만들기 위한 license-safe 가이드다. 실제 나무위키 문장을 복사하는 것이 아니라, 표제어 정의, 짧은 사족, 산문과 목록의 혼합 같은 문체 방향만 잡는다.",
         "PATTERNS.md는 현재 4개 언어에 걸친 168개 pattern entries를 문서화한다. 다만 한국어 README 일부 표는 160개 표기를 남기고 있어, 패턴 수를 인용할 때는 PATTERNS.md와 릴리스 시점을 같이 확인하는 편이 안전하다.",
+        "2026-07-03 v6.1.0 릴리스는 persona safety gate, ko/en/zh/ja multilingual persona, custom voice authoring, register/profile precedence, ARCHITECTURE와 WORKFLOW 문서를 묶어 persona hardening으로 정리했다.",
       ],
     },
     {

@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-06-05T02:31:00.000Z",
+  modifiedAt: "2026-07-04T01:02:58.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -36,6 +36,11 @@ export const ohMyClaudecodeArticle = {
       label: "Homepage",
       value: "oh-my-claudecode website",
       valueHref: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+    },
+    {
+      label: "Latest release",
+      value: "v4.15.2",
+      valueHref: "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v4.15.2",
     },
     { label: "Links", value: "" },
   ],
@@ -92,6 +97,7 @@ export const ohMyClaudecodeArticle = {
       body: [
         "README.ko는 v4.1.7부터 Team이 OMC의 표준 오케스트레이션 방식이라고 설명한다. 기본 파이프라인은 team-plan, team-prd, team-exec, team-verify, team-fix loop 순서로 제시된다.",
         "v4.4.0 이후 Codex와 Gemini 작업은 MCP 서버 대신 tmux CLI worker로 실행하는 방향을 안내한다. omc team N:codex, omc team N:gemini, omc team N:claude 표면이 있고, /ccg는 Codex와 Gemini 조언을 Claude가 통합하는 shortcut이다.",
+        "2026-07-03 v4.15.2 릴리스는 기본 HUD 정확도, hook timeout 안정성, Windows/path 처리, workflow guardrail 수정을 중심으로 한 패치다.",
       ],
       table: {
         caption: "oh-my-claudecode 실행 표면",

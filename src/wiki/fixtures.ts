@@ -1,5 +1,6 @@
 import type { HomePanel, WikiArticle } from "./types";
 import { gajaeCodeArticle } from "./gajaeCodeArticle";
+import { hermesAgentArticle } from "./hermesAgentArticle";
 import { lazycodexArticle } from "./lazycodexArticle";
 import { ohMyClaudecodeArticle } from "./ohMyClaudecodeArticle";
 import { ohMyCodexArticle } from "./ohMyCodexArticle";
@@ -9,6 +10,7 @@ import { sampleArticles } from "./sampleArticles";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
+  hermesAgentArticle,
   lazycodexArticle,
   ohMyClaudecodeArticle,
   ohMyCodexArticle,
@@ -21,6 +23,11 @@ export const homePanels = [
   {
     title: "최근 편집된 저장소",
     items: [
+      {
+        label: "NousResearch/hermes-agent",
+        href: "/w/NousResearch%2Fhermes-agent",
+        description: "기억, 스킬, gateway, cron을 묶는 자기개선형 에이전트",
+      },
       {
         label: "Yeachan-Heo/gajae-code",
         href: "/w/Yeachan-Heo%2Fgajae-code",

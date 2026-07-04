@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-06-05T02:33:00.000Z",
+  modifiedAt: "2026-07-04T01:02:58.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -37,6 +37,11 @@ export const ohMyOpenagentArticle = {
       value: "omo.vibetip.help/docs",
       valueHref: "https://omo.vibetip.help/docs",
     },
+    {
+      label: "Latest release",
+      value: "v4.15.1",
+      valueHref: "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v4.15.1",
+    },
     { label: "Links", value: "" },
   ],
   sections: [
@@ -67,6 +72,7 @@ export const ohMyOpenagentArticle = {
       title: "설치 가이드 흐름",
       body: [
         "README는 사람에게 설치 명령을 직접 외우게 하기보다 LLM 에이전트에게 installation guide URL을 붙여넣으라고 안내한다. LLM 에이전트용으로는 같은 guide를 curl로 받아 그대로 따르는 흐름도 적혀 있다.",
+        "2026-07-01 v4.15.1 릴리스는 LazyCodex install repair와 cleaner Codex skill discovery를 중심으로 한다. 깨진 marketplace-managed install은 조용히 건너뛰지 않고 repair 동작을 명시하고, legacy ultraresearch 노출을 줄여 ulw-research를 canonical research entrypoint로 남긴다.",
       ],
       subsections: [
         {
