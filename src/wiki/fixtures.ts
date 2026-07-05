@@ -77,6 +77,29 @@ export const homePanels = [
     ],
   },
   {
+    title: "이번 점검에서 눈에 띈 저장소",
+    items: [
+      {
+        label: "wshobson/agents",
+        href: "https://github.com/wshobson/agents",
+        description:
+          "Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilot, Gemini CLI를 함께 겨냥한 multi-harness agentic plugin marketplace",
+      },
+      {
+        label: "openai/codex-plugin-cc",
+        href: "https://github.com/openai/codex-plugin-cc",
+        description:
+          "Claude Code에서 Codex를 코드 리뷰나 작업 위임에 쓰는 plugin",
+      },
+      {
+        label: "VoltAgent/awesome-agent-skills",
+        href: "https://github.com/VoltAgent/awesome-agent-skills",
+        description:
+          "Claude Code, Codex, Gemini CLI, Cursor 계열 agent skills 큐레이션",
+      },
+    ],
+  },
+  {
     title: "작성 요청",
     items: [
       {

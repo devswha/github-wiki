@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-06-05T02:30:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -121,6 +121,14 @@ export const gajaeCodeArticle = {
         "README는 session auto-retry와 provider retry budget을 별도 계층으로 설명한다. requestMaxRetries는 stream이 열리기 전 provider SDK/fetch 재시도에, streamMaxRetries는 replay-safe stream 실패에 쓰인다.",
         "개발 문서에서는 workflow definition이나 rebrand surface 변경 시 visible definition, gate 검증, rebrand inventory, default definition 테스트를 실행하라고 안내한다. 즉 이 프로젝트의 기본값은 소스에 포함된 정의와 검증 gate를 함께 유지하는 방식이다.",
         "실행 로그는 append-only로 쌓여서, 세션이 중간에 끊겨도 replay-safe하게 같은 지점에서 이어진다.",
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-04 v0.8.1 릴리스가 올라왔다. 최근 커밋에는 skill tool을 discoverable 대신 default-registered로 바꾸는 변경, vanished acknowledged tmux turn 분류 수정, inline skill invocation 지원이 포함됐다.",
+        "GitHub metadata 기준 저장소 설명은 Gajae Code MVP이고 기본 브랜치는 main이다. 최근 릴리스 흐름은 public surface 확대보다는 skill 호출 기본값과 tmux coordinator 안정성에 맞춰져 있다.",
       ],
     },
     {

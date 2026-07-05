@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyCodexArticle = {
   slug: "Yeachan-Heo/oh-my-codex",
   title: "oh-my-codex",
-  modifiedAt: "2026-06-05T02:32:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -46,7 +46,7 @@ export const ohMyCodexArticle = {
       body: [
         "README는 Yeachan-Heo/oh-my-codex 저장소와 oh-my-codex npm 패키지를 공식 OMX 프로젝트와 설치 대상이라고 못박는다. 이 프로젝트는 OpenAI Codex CLI를 대체하지 않고, Codex를 실행 엔진으로 둔 워크플로우 계층이다.",
         "OMX가 더해 주는 것은 강한 기본 세션, 일관된 workflow, role keyword와 skill 재사용, 그리고 .omx/ 아래의 plan, log, memory, runtime state 저장이다. README는 plain Codex만 원한다면 OMX가 필요 없을 수 있다고도 말한다.",
-        "릴리스 흐름이 빠른 편이라, README와 변경 로그는 v0.17.0 같은 버전 표기로 명령 표면과 기본값이 갱신된 시점을 구분한다.",
+        "릴리스 흐름이 빠른 편이라, README와 변경 로그는 v0.19.0 같은 버전 표기로 명령 표면과 기본값이 갱신된 시점을 구분한다.",
       ],
       subsections: [
         {
@@ -160,6 +160,14 @@ export const ohMyCodexArticle = {
       body: [
         "README는 권장 기본 경로를 macOS 또는 Linux의 Codex CLI로 한정한다. native Windows와 Codex App은 기본 경험이 아니고, 깨지거나 일관되지 않을 수 있으며 지원이 상대적으로 적다고 경고한다.",
         "이미 Homebrew가 codex binary를 소유한 경우 npm으로 @openai/codex와 oh-my-codex를 한 번에 덮어 설치하지 말라는 주의도 있다. OMX가 필요한 것은 npm으로 설치된 Codex가 아니라 PATH에 있고 인증된 codex 명령이다.",
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-04 v0.19.0 릴리스는 Rust test flakiness 수정과 릴리스 준비를 표제로 올라왔다. 직전 커밋 흐름에는 autopilot ralplan handoff 수정, release body contributors 섹션 보강, .omx/tmp planning artifact execution transport 차단이 포함됐다.",
+        "GitHub metadata 기준 기본 브랜치는 main이고, 저장소 설명은 Codex에 hooks, agent teams, HUDs를 더하는 OMX 계층으로 잡혀 있다. 최근 변경은 새 표면 추가보다 자동화 handoff와 실행 경계 보강 쪽 신호가 강하다.",
       ],
     },
   ],

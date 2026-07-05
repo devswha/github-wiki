@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-06-05T02:33:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -142,6 +142,14 @@ export const ohMyOpenagentArticle = {
           linkLabel: "도구 보기",
           title: "frontend-ui-ux",
         },
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-01 v4.15.1 릴리스가 최신 릴리스로 확인된다. 2026-07-04 최근 커밋 흐름에는 tmux-core가 subagent pane에 auth env를 전달하도록 고치고, pane argv 테스트가 auth env를 허용하도록 보정한 변경이 들어갔다.",
+        "GitHub metadata 기준 기본 브랜치는 dev이고, 저장소 설명은 Codex와 OpenCode를 위한 에이전트 하네스로 되어 있다. 최근 변경은 큰 리브랜딩보다 tmux subagent 실행 환경과 인증 환경 전달 안정화 쪽이다.",
       ],
     },
     {

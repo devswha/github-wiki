@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const lazycodexArticle = {
   slug: "code-yeongyu/lazycodex",
   title: "lazycodex",
-  modifiedAt: "2026-06-04T15:20:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -164,6 +164,14 @@ export const lazycodexArticle = {
         "LazyCodex의 직접 경쟁 대상은 일반 문서 생성기나 단순 Codex 설정 파일이 아니다. 목표는 Codex 위에 팀형 규율 에이전트를 얹어, 계획자, 실행자, 검토자, 도구 레이어가 같은 규칙으로 움직이게 하는 것이다.",
         "정리하면 LazyCodex는 zero-config 설치로 규율 에이전트 묶음을 Codex 위에 얹는 입구이고, 실제 동작은 OmO 번들과 hooks.json 선언을 따라간다.",
         "README는 모델 라우팅도 주요 차별점으로 설명한다. 모든 작업을 항상 가장 무거운 모델로 보내는 대신, 빠른 작업과 깊은 추론 작업을 구분해 적절한 모델 체인을 고르는 설계라는 주장이다.",
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-01 v4.15.1 릴리스가 최신 릴리스로 확인된다. 2026-07-03 최근 커밋에는 mobile에서 chat replay가 보이지 않던 demo 수정과 dark Linear-grade landing redesign, live ultrawork chat-replay demo 추가가 들어갔다.",
+        "GitHub metadata 기준 저장소 설명은 복잡한 코드베이스를 위한 에이전트 하네스이며, project memory, planning, execution, verified completion을 Codex 안에 붙이는 쪽이다. 최근 변경은 CLI 본체보다 웹 landing과 Codex marketplace sync 신호가 크다.",
       ],
     },
     {

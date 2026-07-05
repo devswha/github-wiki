@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const patinaArticle = {
   slug: "devswha/patina",
   title: "patina",
-  modifiedAt: "2026-06-04T10:00:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "문서화", path: "/w/category/documentation" },
     { label: "AI 글쓰기 도구", path: "/w/category/ai-writing-tool" },
@@ -141,6 +141,14 @@ export const patinaArticle = {
       body: [
         "README는 2026-05-22 최신 모델 리베이스라인에서 KO+EN 기준 편집 핫스팟 catch 67.3%와 사람 글 컨트롤 오탐 16.0%를 제시한다. 이 수치는 일반 탐지기 성능표라기보다, 편집할 구간을 얼마나 잡아내는지에 대한 프로젝트 내부 기준에 가깝다.",
         "체크인된 suspect-zone 벤치마크의 latest.md는 2026-06-03 생성 리포트에서 39개 fixture, 4개 언어, 전체 정확도 100.0%를 기록한다. 하지만 문서 자신도 이 결과가 작은 fixture corpus에 대한 회귀 체크일 뿐, 실제 글의 작성자를 판정하는 증거는 아니라고 선을 긋는다.",
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-03 v6.1.0 릴리스는 persona hardening을 표제로 내걸었다. 같은 날 커밋 흐름에는 safety gate, 다국어 persona 섹션, custom voice authoring 문서화, two-engine-lanes architecture contract 갱신이 함께 들어갔다.",
+        "GitHub metadata 기준 2026-07-05 점검 시점의 저장소 설명은 KO/EN/ZH/JA 대상 AI-writing humanizer이고, 기본 브랜치는 main이다. 최근 변경은 문체 변환 기능 자체보다 persona와 safety 경계 보강 쪽에 더 가깝다.",
       ],
     },
     {

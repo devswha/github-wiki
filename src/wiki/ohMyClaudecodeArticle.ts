@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-06-05T02:31:00.000Z",
+  modifiedAt: "2026-07-05T01:01:30.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -142,6 +142,14 @@ export const ohMyClaudecodeArticle = {
         "유틸리티로는 rate limit reset 뒤 세션을 재개하는 wait 명령, Telegram/Discord/Slack stop callback tag 설정, OpenClaw gateway 연동이 문서화되어 있다. OpenClaw 연동은 session-start, stop, keyword-detector, ask-user-question, pre/post-tool-use 같은 이벤트를 gateway로 전달한다.",
         "정리하면 OMC는 Claude Code 위에 Team Mode, 자연어 shortcut, 19개의 전문 에이전트, project-memory를 얹는 오케스트레이션 확장이다.",
         "각 표면은 따로 떼어 쓰기보다, hook과 skill, agent, state 네 시스템이 맞물릴 때 제 역할을 한다.",
+      ],
+    },
+    {
+      id: "recent-updates",
+      title: "최근 갱신",
+      body: [
+        "2026-07-03 v4.15.2 릴리스가 main에 병합됐다. 최근 커밋에는 default HUD preset merge 수정, UserPromptSubmit timeout 상향으로 skill-injector 3초 abort를 줄이는 hook 수정, OMC_STATE_DIR 기반 skill-sessions state path 보정이 보인다.",
+        "GitHub metadata 기준 저장소 설명은 Claude Code를 위한 teams-first multi-agent orchestration이고, 기본 브랜치는 main이다. 최근 변화는 Team Mode 자체 설명보다 HUD, hook timeout, state directory 같은 운영 안정성 쪽에 집중돼 있다.",
       ],
     },
     {
