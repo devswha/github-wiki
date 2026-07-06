@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const lazycodexArticle = {
   slug: "code-yeongyu/lazycodex",
   title: "lazycodex",
-  modifiedAt: "2026-06-04T15:20:00.000Z",
+  modifiedAt: "2026-07-06T01:02:15.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -27,6 +27,11 @@ export const lazycodexArticle = {
       valueHref: "https://github.com/code-yeongyu/lazycodex",
     },
     { label: "Primary language", value: "TypeScript" },
+    {
+      label: "Latest release",
+      value: "v4.15.1",
+      valueHref: "https://github.com/code-yeongyu/lazycodex/releases/tag/v4.15.1",
+    },
     {
       label: "License",
       value: "MIT",

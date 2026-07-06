@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-06-05T02:30:00.000Z",
+  modifiedAt: "2026-07-06T01:02:15.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -27,6 +27,11 @@ export const gajaeCodeArticle = {
       valueHref: "https://github.com/Yeachan-Heo/gajae-code",
     },
     { label: "Primary language", value: "TypeScript / Rust" },
+    {
+      label: "Latest release",
+      value: "v0.8.1",
+      valueHref: "https://github.com/Yeachan-Heo/gajae-code/releases/tag/v0.8.1",
+    },
     {
       label: "License",
       value: "MIT",

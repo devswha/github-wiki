@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const patinaArticle = {
   slug: "devswha/patina",
   title: "patina",
-  modifiedAt: "2026-06-04T10:00:00.000Z",
+  modifiedAt: "2026-07-06T01:02:15.000Z",
   categories: [
     { label: "문서화", path: "/w/category/documentation" },
     { label: "AI 글쓰기 도구", path: "/w/category/ai-writing-tool" },
@@ -23,6 +23,11 @@ export const patinaArticle = {
       valueHref: "https://github.com/devswha/patina",
     },
     { label: "Primary language", value: "JavaScript / Node.js" },
+    {
+      label: "Current version",
+      value: "6.2.0",
+      valueHref: "https://github.com/devswha/patina/blob/main/package.json",
+    },
     {
       label: "License",
       value: "MIT",
@@ -77,7 +82,7 @@ export const patinaArticle = {
       body: [
         "기본 실행은 문장을 재작성하지만, audit과 score 모드에서는 어떤 패턴이 잡혔는지만 확인할 수 있다. diff 모드는 바뀐 지점을 비교하고, ouroboros 모드는 점수와 의미 보존 조건이 수렴할 때까지 반복 교정을 시도한다.",
         "Claude Code, Codex CLI, Cursor, OpenCode용 스킬로 붙일 수 있고, 독립형 Node.js CLI로도 쓸 수 있다. 로그인된 codex, claude, gemini CLI가 있으면 별도 API 키 없이 로컬 CLI 백엔드로 실행할 수 있다는 점도 README에서 강조한다.",
-        "브라우저 playground는 설치 없이 점검할 수 있는 표면이지만, README 기준으로는 탐지 전용이다. 사용자의 글을 외부 LLM에 맡겨 재작성하는 구조가 아니라, 브라우저 안에서 문체 통계와 패턴 신호를 보는 쪽이다.",
+        "브라우저 playground는 설치 없이 점검할 수 있는 표면이지만, README 기준으로는 탐지 전용이다. 사용자의 글을 외부 LLM에 맡겨 재작성하는 구조가 아니라, 브라우저 안에서 문체 통계와 패턴 신호를 보는 쪽이다. 2026-07-05 커밋 흐름에는 hosted rewrite에서 genre persona를 고르는 Voice selector도 추가됐다.",
       ],
       table: {
         caption: "patina 기능 요약",
