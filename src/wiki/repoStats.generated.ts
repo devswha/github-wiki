@@ -4,6 +4,18 @@
 import type { RepoStat } from "./repoStats";
 
 export const repoStats: Record<string, RepoStat> = {
+  "Aider-AI/aider": {
+    "stars": 47140,
+    "forks": 4708,
+    "pushedAt": "2026-05-22T14:02:20Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "BerriAI/litellm": {
+    "stars": 52806,
+    "forks": 9526,
+    "pushedAt": "2026-07-07T06:12:23Z",
+    "fetchedAt": "2026-07-07"
+  },
   "NomaDamas/k-skill": {
     "stars": 6091,
     "forks": 687,
@@ -11,9 +23,33 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "NousResearch/hermes-agent": {
-    "stars": 210521,
-    "forks": 38588,
+    "stars": 210528,
+    "forks": 38589,
     "pushedAt": "2026-07-07T05:48:24Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "OpenHands/OpenHands": {
+    "stars": 79679,
+    "forks": 10166,
+    "pushedAt": "2026-07-07T06:03:37Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "RooCodeInc/Roo-Code": {
+    "stars": 24309,
+    "forks": 3355,
+    "pushedAt": "2026-05-15T18:08:47Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "SWE-agent/SWE-agent": {
+    "stars": 19713,
+    "forks": 2153,
+    "pushedAt": "2026-07-06T16:03:50Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "stars": 185410,
+    "forks": 46124,
+    "pushedAt": "2026-07-07T05:04:26Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/gajae-code": {
@@ -23,21 +59,45 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-    "stars": 37486,
+    "stars": 37487,
     "forks": 3379,
     "pushedAt": "2026-07-07T04:05:23Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-codex": {
-    "stars": 31746,
+    "stars": 31748,
     "forks": 2461,
     "pushedAt": "2026-07-07T05:17:44Z",
     "fetchedAt": "2026-07-07"
   },
+  "aaif-goose/goose": {
+    "stars": 50756,
+    "forks": 5465,
+    "pushedAt": "2026-07-07T03:36:00Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "anomalyco/opencode": {
+    "stars": 183118,
+    "forks": 22697,
+    "pushedAt": "2026-07-07T06:08:36Z",
+    "fetchedAt": "2026-07-07"
+  },
   "anthropics/claude-code": {
-    "stars": 136595,
-    "forks": 21943,
+    "stars": 136597,
+    "forks": 21944,
     "pushedAt": "2026-07-06T22:51:16Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "browser-use/browser-use": {
+    "stars": 103195,
+    "forks": 11424,
+    "pushedAt": "2026-07-07T02:59:23Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "cline/cline": {
+    "stars": 64378,
+    "forks": 6857,
+    "pushedAt": "2026-07-07T05:25:10Z",
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/lazycodex": {
@@ -47,7 +107,7 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/oh-my-openagent": {
-    "stars": 65090,
+    "stars": 65092,
     "forks": 5315,
     "pushedAt": "2026-07-07T04:15:32Z",
     "fetchedAt": "2026-07-07"
@@ -58,22 +118,58 @@ export const repoStats: Record<string, RepoStat> = {
     "pushedAt": "2026-07-07T05:41:01Z",
     "fetchedAt": "2026-07-07"
   },
+  "earendil-works/pi": {
+    "stars": 68207,
+    "forks": 8373,
+    "pushedAt": "2026-07-07T05:14:39Z",
+    "fetchedAt": "2026-07-07"
+  },
   "facebook/react": {
     "stars": 246279,
     "forks": 51227,
     "pushedAt": "2026-07-07T05:31:01Z",
     "fetchedAt": "2026-07-07"
   },
+  "langchain-ai/langchain": {
+    "stars": 141140,
+    "forks": 23459,
+    "pushedAt": "2026-07-06T16:15:21Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "langgenius/dify": {
+    "stars": 147972,
+    "forks": 23303,
+    "pushedAt": "2026-07-07T06:02:28Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "ollama/ollama": {
+    "stars": 175624,
+    "forks": 16864,
+    "pushedAt": "2026-07-07T01:11:57Z",
+    "fetchedAt": "2026-07-07"
+  },
   "omnigent-ai/omnigent": {
-    "stars": 6488,
-    "forks": 860,
-    "pushedAt": "2026-07-07T05:58:55Z",
+    "stars": 6489,
+    "forks": 861,
+    "pushedAt": "2026-07-07T06:08:56Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "open-webui/open-webui": {
+    "stars": 144491,
+    "forks": 20882,
+    "pushedAt": "2026-07-02T17:38:23Z",
     "fetchedAt": "2026-07-07"
   },
   "openai/codex": {
-    "stars": 95929,
+    "stars": 95934,
     "forks": 14239,
-    "pushedAt": "2026-07-07T06:03:19Z",
+    "pushedAt": "2026-07-07T06:13:51Z",
+    "fetchedAt": "2026-07-07"
+  },
+  "openinterpreter/openinterpreter": {
+    "stars": 64295,
+    "forks": 5594,
+    "pushedAt": "2026-07-07T00:59:25Z",
     "fetchedAt": "2026-07-07"
   }
 };
