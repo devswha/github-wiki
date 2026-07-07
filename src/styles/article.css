@@ -5,7 +5,7 @@
   background: var(--wiki-surface);
   box-shadow: none;
   overflow-wrap: break-word;
-  word-break: break-all;
+  word-break: normal;
 }
 
 .article-body,
@@ -149,7 +149,7 @@
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  border: 2px solid #000000;
+  border: 1px solid var(--wiki-accent-dark);
   background: var(--wiki-surface);
   color: var(--wiki-text);
   font-size: 1rem;
@@ -158,9 +158,9 @@
 
 .repo-infobox caption {
   padding: 8px;
-  border: 2px solid #000000;
+  border: 1px solid var(--wiki-accent-dark);
   border-bottom: 0;
-  background: #000000;
+  background: var(--wiki-accent);
   color: #ffffff;
   font-weight: 800;
   overflow-wrap: anywhere;
@@ -176,7 +176,7 @@
 
 .repo-infobox th {
   width: 40%;
-  background: #000000;
+  background: var(--wiki-accent);
   color: #ffffff;
   text-align: left;
 }
@@ -267,7 +267,7 @@
   border: 1px solid var(--wiki-border);
   border-radius: 0;
   background: var(--wiki-surface);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .toc strong {
@@ -314,16 +314,16 @@
 
 
 .article-section {
-  clear: both;
+  clear: none;
   scroll-margin-top: 70px;
 }
 
 .article-section + .article-section {
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 .article-section h2 {
-  margin: 0 0 13px;
+  margin: 32px 0 13px;
   padding: 0 0 5px;
   border-top: 0;
   border-bottom: 1px solid var(--wiki-heading-border);
@@ -344,7 +344,7 @@
   padding: 0 0 4px;
   border-bottom: 1px solid var(--wiki-heading-border);
   color: var(--wiki-text);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -354,7 +354,7 @@
   font-size: 1rem;
   line-height: 1.5;
   overflow-wrap: break-word;
-  word-break: break-all;
+  word-break: normal;
 }
 
 .upstream-article .article-section p {

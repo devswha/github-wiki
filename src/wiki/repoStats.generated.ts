@@ -5,51 +5,51 @@ import type { RepoStat } from "./repoStats";
 
 export const repoStats: Record<string, RepoStat> = {
   "Aider-AI/aider": {
-    "stars": 47142,
+    "stars": 47143,
     "forks": 4706,
     "pushedAt": "2026-05-22T14:02:20Z",
     "fetchedAt": "2026-07-07"
   },
   "BerriAI/litellm": {
-    "stars": 52844,
+    "stars": 52854,
     "forks": 9536,
-    "pushedAt": "2026-07-07T07:49:22Z",
+    "pushedAt": "2026-07-07T12:47:04Z",
     "fetchedAt": "2026-07-07"
   },
   "CherryHQ/cherry-studio": {
-    "stars": 48260,
+    "stars": 48261,
     "forks": 4586,
-    "pushedAt": "2026-07-07T11:18:10Z",
+    "pushedAt": "2026-07-07T12:40:04Z",
     "fetchedAt": "2026-07-07"
   },
   "CopilotKit/CopilotKit": {
     "stars": 35816,
-    "forks": 4438,
+    "forks": 4437,
     "pushedAt": "2026-07-07T10:49:05Z",
     "fetchedAt": "2026-07-07"
   },
   "HKUDS/nanobot": {
-    "stars": 45095,
+    "stars": 45098,
     "forks": 7957,
     "pushedAt": "2026-07-07T10:45:00Z",
     "fetchedAt": "2026-07-07"
   },
   "NomaDamas/k-skill": {
-    "stars": 6095,
+    "stars": 6096,
     "forks": 688,
     "pushedAt": "2026-07-07T08:02:09Z",
     "fetchedAt": "2026-07-07"
   },
   "NousResearch/hermes-agent": {
-    "stars": 210678,
-    "forks": 38632,
-    "pushedAt": "2026-07-07T11:32:53Z",
+    "stars": 210725,
+    "forks": 38642,
+    "pushedAt": "2026-07-07T12:50:11Z",
     "fetchedAt": "2026-07-07"
   },
   "OpenHands/OpenHands": {
-    "stars": 79731,
+    "stars": 79740,
     "forks": 10170,
-    "pushedAt": "2026-07-07T11:22:25Z",
+    "pushedAt": "2026-07-07T12:45:48Z",
     "fetchedAt": "2026-07-07"
   },
   "RooCodeInc/Roo-Code": {
@@ -59,25 +59,25 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "SWE-agent/SWE-agent": {
-    "stars": 19721,
+    "stars": 19723,
     "forks": 2154,
     "pushedAt": "2026-07-06T16:03:50Z",
     "fetchedAt": "2026-07-07"
   },
   "Significant-Gravitas/AutoGPT": {
-    "stars": 185412,
+    "stars": 185416,
     "forks": 46125,
-    "pushedAt": "2026-07-07T10:57:53Z",
+    "pushedAt": "2026-07-07T11:18:33Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/gajae-code": {
-    "stars": 1670,
-    "forks": 241,
-    "pushedAt": "2026-07-07T11:28:27Z",
+    "stars": 1671,
+    "forks": 240,
+    "pushedAt": "2026-07-07T12:44:07Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-    "stars": 37507,
+    "stars": 37509,
     "forks": 3379,
     "pushedAt": "2026-07-07T11:15:45Z",
     "fetchedAt": "2026-07-07"
@@ -89,63 +89,63 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "aaif-goose/goose": {
-    "stars": 50765,
+    "stars": 50767,
     "forks": 5467,
     "pushedAt": "2026-07-07T03:36:00Z",
     "fetchedAt": "2026-07-07"
   },
   "anomalyco/opencode": {
-    "stars": 183227,
-    "forks": 22716,
-    "pushedAt": "2026-07-07T11:32:08Z",
+    "stars": 183247,
+    "forks": 22720,
+    "pushedAt": "2026-07-07T12:51:35Z",
     "fetchedAt": "2026-07-07"
   },
   "anthropics/claude-code": {
-    "stars": 136641,
-    "forks": 21955,
+    "stars": 136655,
+    "forks": 21956,
     "pushedAt": "2026-07-06T22:51:16Z",
     "fetchedAt": "2026-07-07"
   },
   "browser-use/browser-use": {
-    "stars": 103254,
-    "forks": 11426,
+    "stars": 103270,
+    "forks": 11427,
     "pushedAt": "2026-07-07T02:59:23Z",
     "fetchedAt": "2026-07-07"
   },
   "bytedance/deer-flow": {
-    "stars": 76332,
+    "stars": 76343,
     "forks": 10353,
-    "pushedAt": "2026-07-07T06:39:04Z",
+    "pushedAt": "2026-07-07T11:55:34Z",
     "fetchedAt": "2026-07-07"
   },
   "cline/cline": {
-    "stars": 64393,
-    "forks": 6860,
+    "stars": 64398,
+    "forks": 6861,
     "pushedAt": "2026-07-07T07:15:53Z",
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/lazycodex": {
-    "stars": 2519,
+    "stars": 2520,
     "forks": 161,
     "pushedAt": "2026-07-03T12:15:12Z",
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/oh-my-openagent": {
-    "stars": 65133,
+    "stars": 65140,
     "forks": 5318,
     "pushedAt": "2026-07-07T07:37:32Z",
     "fetchedAt": "2026-07-07"
   },
   "crewAIInc/crewAI": {
-    "stars": 55063,
-    "forks": 7736,
+    "stars": 55071,
+    "forks": 7737,
     "pushedAt": "2026-07-07T07:35:10Z",
     "fetchedAt": "2026-07-07"
   },
   "danny-avila/LibreChat": {
-    "stars": 40386,
+    "stars": 40390,
     "forks": 8276,
-    "pushedAt": "2026-07-07T11:15:28Z",
+    "pushedAt": "2026-07-07T12:50:01Z",
     "fetchedAt": "2026-07-07"
   },
   "devswha/patina": {
@@ -155,75 +155,75 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "earendil-works/pi": {
-    "stars": 68308,
-    "forks": 8393,
-    "pushedAt": "2026-07-07T05:14:39Z",
+    "stars": 68324,
+    "forks": 8395,
+    "pushedAt": "2026-07-07T12:30:32Z",
     "fetchedAt": "2026-07-07"
   },
   "facebook/react": {
-    "stars": 246261,
-    "forks": 51232,
+    "stars": 246266,
+    "forks": 51234,
     "pushedAt": "2026-07-07T05:31:01Z",
     "fetchedAt": "2026-07-07"
   },
   "firecrawl/firecrawl": {
-    "stars": 146899,
+    "stars": 146950,
     "forks": 8444,
-    "pushedAt": "2026-07-07T09:55:03Z",
+    "pushedAt": "2026-07-07T12:44:14Z",
     "fetchedAt": "2026-07-07"
   },
   "google-gemini/gemini-cli": {
     "stars": 105822,
-    "forks": 14230,
+    "forks": 14228,
     "pushedAt": "2026-07-07T01:56:36Z",
     "fetchedAt": "2026-07-07"
   },
   "infiniflow/ragflow": {
-    "stars": 84494,
+    "stars": 84503,
     "forks": 9843,
-    "pushedAt": "2026-07-07T11:06:30Z",
+    "pushedAt": "2026-07-07T12:45:35Z",
     "fetchedAt": "2026-07-07"
   },
   "langchain-ai/langchain": {
-    "stars": 141176,
+    "stars": 141184,
     "forks": 23465,
     "pushedAt": "2026-07-07T09:07:01Z",
     "fetchedAt": "2026-07-07"
   },
   "langgenius/dify": {
-    "stars": 148017,
-    "forks": 23316,
-    "pushedAt": "2026-07-07T11:17:03Z",
+    "stars": 148034,
+    "forks": 23317,
+    "pushedAt": "2026-07-07T12:52:17Z",
     "fetchedAt": "2026-07-07"
   },
   "microsoft/autogen": {
-    "stars": 59548,
-    "forks": 8963,
+    "stars": 59552,
+    "forks": 8964,
     "pushedAt": "2026-04-15T11:59:09Z",
     "fetchedAt": "2026-07-07"
   },
   "ollama/ollama": {
-    "stars": 175639,
+    "stars": 175642,
     "forks": 16869,
     "pushedAt": "2026-07-07T01:11:57Z",
     "fetchedAt": "2026-07-07"
   },
   "omnigent-ai/omnigent": {
-    "stars": 6526,
-    "forks": 866,
-    "pushedAt": "2026-07-07T11:26:34Z",
+    "stars": 6540,
+    "forks": 872,
+    "pushedAt": "2026-07-07T12:47:39Z",
     "fetchedAt": "2026-07-07"
   },
   "open-webui/open-webui": {
-    "stars": 144535,
-    "forks": 20889,
+    "stars": 144546,
+    "forks": 20892,
     "pushedAt": "2026-07-02T17:38:23Z",
     "fetchedAt": "2026-07-07"
   },
   "openai/codex": {
-    "stars": 96007,
-    "forks": 14247,
-    "pushedAt": "2026-07-07T11:21:36Z",
+    "stars": 96021,
+    "forks": 14250,
+    "pushedAt": "2026-07-07T12:43:19Z",
     "fetchedAt": "2026-07-07"
   },
   "openinterpreter/openinterpreter": {
@@ -233,15 +233,15 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "unclecode/crawl4ai": {
-    "stars": 71255,
+    "stars": 71261,
     "forks": 7326,
     "pushedAt": "2026-07-07T08:24:02Z",
     "fetchedAt": "2026-07-07"
   },
   "vllm-project/vllm": {
-    "stars": 85585,
-    "forks": 19062,
-    "pushedAt": "2026-07-07T10:51:18Z",
+    "stars": 85590,
+    "forks": 19064,
+    "pushedAt": "2026-07-07T12:52:43Z",
     "fetchedAt": "2026-07-07"
   }
 };
