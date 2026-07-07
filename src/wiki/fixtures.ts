@@ -1,19 +1,25 @@
 import type { HomePanel, WikiArticle } from "./types";
 import { gajaeCodeArticle } from "./gajaeCodeArticle";
+import { hermesAgentArticle } from "./hermesAgentArticle";
 import { lazycodexArticle } from "./lazycodexArticle";
 import { ohMyClaudecodeArticle } from "./ohMyClaudecodeArticle";
 import { ohMyCodexArticle } from "./ohMyCodexArticle";
 import { ohMyOpenagentArticle } from "./ohMyOpenagentArticle";
+import { omnigentArticle } from "./omnigentArticle";
 import { patinaArticle } from "./patinaArticle";
 import { sampleArticles } from "./sampleArticles";
+import { trendingRepositoriesArticle } from "./trendingRepositoriesArticle";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
+  hermesAgentArticle,
   lazycodexArticle,
   ohMyClaudecodeArticle,
   ohMyCodexArticle,
   ohMyOpenagentArticle,
+  omnigentArticle,
   patinaArticle,
+  trendingRepositoriesArticle,
   ...sampleArticles,
 ];
 
@@ -25,6 +31,11 @@ export const homePanels = [
         label: "Yeachan-Heo/gajae-code",
         href: "/w/Yeachan-Heo%2Fgajae-code",
         description: "면담, 계획, tmux 실행, 검증을 묶는 GJC 하네스",
+      },
+      {
+        label: "NousResearch/hermes-agent",
+        href: "/w/NousResearch%2Fhermes-agent",
+        description: "기억, 스킬, gateway, cron을 묶는 자기개선형 에이전트",
       },
       {
         label: "code-yeongyu/lazycodex",
@@ -45,6 +56,31 @@ export const homePanels = [
         label: "code-yeongyu/oh-my-openagent",
         href: "/w/code-yeongyu%2Foh-my-openagent",
         description: "OmO/OpenAgent 계열 multi-harness 하네스",
+      },
+      {
+        label: "omnigent-ai/omnigent",
+        href: "/w/omnigent-ai%2Fomnigent",
+        description: "여러 AI agent를 묶는 open-source meta-harness",
+      },
+    ],
+  },
+  {
+    title: "트렌딩 관찰",
+    items: [
+      {
+        label: "AI agent 후보",
+        href: "/w/Github.wiki%2Ftrending-repositories#agent-tools",
+        description: "GitHub search로 확인한 AI 에이전트와 agentic coding 후보",
+      },
+      {
+        label: "문서화 도구 후보",
+        href: "/w/Github.wiki%2Ftrending-repositories#documentation-tools",
+        description: "Storybook, Mermaid, Docusaurus 같은 문서화 계열 후보",
+      },
+      {
+        label: "운영 메모",
+        href: "/w/Github.wiki%2Ftrending-repositories#maintenance-notes",
+        description: "자동 점검에서 후보를 문서로 승격할 때 쓰는 기준",
       },
     ],
   },
