@@ -35,21 +35,21 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "NomaDamas/k-skill": {
-    "stars": 6096,
+    "stars": 6097,
     "forks": 688,
     "pushedAt": "2026-07-07T08:02:09Z",
     "fetchedAt": "2026-07-07"
   },
   "NousResearch/hermes-agent": {
-    "stars": 210725,
-    "forks": 38642,
-    "pushedAt": "2026-07-07T12:50:11Z",
+    "stars": 210743,
+    "forks": 38644,
+    "pushedAt": "2026-07-07T13:15:55Z",
     "fetchedAt": "2026-07-07"
   },
   "OpenHands/OpenHands": {
-    "stars": 79740,
+    "stars": 79753,
     "forks": 10170,
-    "pushedAt": "2026-07-07T12:45:48Z",
+    "pushedAt": "2026-07-07T12:58:24Z",
     "fetchedAt": "2026-07-07"
   },
   "RooCodeInc/Roo-Code": {
@@ -71,19 +71,19 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/gajae-code": {
-    "stars": 1671,
+    "stars": 1672,
     "forks": 240,
-    "pushedAt": "2026-07-07T12:44:07Z",
+    "pushedAt": "2026-07-07T13:10:34Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-    "stars": 37509,
+    "stars": 37510,
     "forks": 3379,
     "pushedAt": "2026-07-07T11:15:45Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-codex": {
-    "stars": 31757,
+    "stars": 31758,
     "forks": 2462,
     "pushedAt": "2026-07-07T05:17:44Z",
     "fetchedAt": "2026-07-07"
@@ -95,13 +95,13 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "anomalyco/opencode": {
-    "stars": 183247,
-    "forks": 22720,
-    "pushedAt": "2026-07-07T12:51:35Z",
+    "stars": 183253,
+    "forks": 22722,
+    "pushedAt": "2026-07-07T13:18:13Z",
     "fetchedAt": "2026-07-07"
   },
   "anthropics/claude-code": {
-    "stars": 136655,
+    "stars": 136656,
     "forks": 21956,
     "pushedAt": "2026-07-06T22:51:16Z",
     "fetchedAt": "2026-07-07"
@@ -125,14 +125,14 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/lazycodex": {
-    "stars": 2520,
+    "stars": 2521,
     "forks": 161,
     "pushedAt": "2026-07-03T12:15:12Z",
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/oh-my-openagent": {
-    "stars": 65140,
-    "forks": 5318,
+    "stars": 65143,
+    "forks": 5319,
     "pushedAt": "2026-07-07T07:37:32Z",
     "fetchedAt": "2026-07-07"
   },
@@ -155,8 +155,8 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "earendil-works/pi": {
-    "stars": 68324,
-    "forks": 8395,
+    "stars": 68332,
+    "forks": 8396,
     "pushedAt": "2026-07-07T12:30:32Z",
     "fetchedAt": "2026-07-07"
   },
@@ -209,7 +209,7 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "omnigent-ai/omnigent": {
-    "stars": 6540,
+    "stars": 6543,
     "forks": 872,
     "pushedAt": "2026-07-07T12:47:39Z",
     "fetchedAt": "2026-07-07"
@@ -221,9 +221,9 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "openai/codex": {
-    "stars": 96021,
+    "stars": 96025,
     "forks": 14250,
-    "pushedAt": "2026-07-07T12:43:19Z",
+    "pushedAt": "2026-07-07T13:14:01Z",
     "fetchedAt": "2026-07-07"
   },
   "openinterpreter/openinterpreter": {

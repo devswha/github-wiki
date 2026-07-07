@@ -68,7 +68,7 @@ test("trimmed Namu-style infobox renders linked Korean rows without version nois
   await expect(infobox.getByRole("row", { name: /GitHub 릴리스/u })).toHaveCount(0);
   await expect(infobox.getByRole("row", { name: /npm 최신/u })).toHaveCount(0);
   await expect(infobox.getByRole("row", { name: /패키지 버전/u })).toHaveCount(0);
-  await expect(infobox.getByRole("row", { name: /스타 \/ 포크/u })).toHaveCount(0);
+  await expect(infobox.getByRole("row", { name: /스타 \/ 포크/u })).toBeVisible();
   await expect(infobox.getByRole("link", { name: "GitHub" })).toHaveAttribute(
     "href",
     "https://github.com/code-yeongyu/lazycodex",
@@ -139,7 +139,7 @@ test("trimmed patina infobox stays readable on mobile", async ({
   await expect(infobox.getByRole("row", { name: /GitHub 릴리스/u })).toHaveCount(0);
   await expect(infobox.getByRole("row", { name: /npm 최신/u })).toHaveCount(0);
   await expect(infobox.getByRole("row", { name: /패키지 버전/u })).toHaveCount(0);
-  await expect(infobox.getByRole("row", { name: /스타 \/ 포크/u })).toHaveCount(0);
+  await expect(infobox.getByRole("row", { name: /스타 \/ 포크/u })).toBeVisible();
   await expect(infobox.getByRole("link", { name: "npm" })).toHaveCount(0);
   await expect(infobox.getByRole("link", { name: "patina-cli" })).toHaveCount(0);
   expect(metrics.linkLabels.length).toBeGreaterThanOrEqual(5);
