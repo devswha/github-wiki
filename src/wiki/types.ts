@@ -75,6 +75,19 @@ export type WikiImage = {
   readonly sourceUrl?: string;
 };
 
+export type WikiAttribution = {
+  /** Source wiki name, e.g. "나무위키". */
+  readonly source: string;
+  /** Canonical URL of the source article. */
+  readonly sourceUrl: string;
+  /** License short name, e.g. "CC BY-NC-SA 2.0 KR". */
+  readonly license: string;
+  /** License deed URL. */
+  readonly licenseUrl: string;
+  /** YYYY-MM-DD the content was retrieved. */
+  readonly retrievedAt: string;
+};
+
 export type WikiArticle = {
   readonly slug: WikiSlug;
   readonly title: string;
@@ -84,6 +97,13 @@ export type WikiArticle = {
   readonly image?: WikiImage;
   readonly infobox: readonly InfoboxRow[];
   readonly sections: readonly ArticleSection[];
+  /**
+   * Present only on articles whose prose was imported from an external wiki
+   * under a copyleft license (e.g. namuwiki, CC BY-NC-SA 2.0 KR). Drives the
+   * source/license footer and suppresses commercial (patina) promos — the
+   * NonCommercial clause forbids commercial-conversion CTAs on these pages.
+   */
+  readonly attribution?: WikiAttribution;
 };
 
 export type HomePanel = {
