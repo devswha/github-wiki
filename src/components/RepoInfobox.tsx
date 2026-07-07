@@ -1,6 +1,7 @@
 import type { ReactElement } from "react";
 
 import type { InfoboxLink, InfoboxRow, WikiImage } from "../wiki/types";
+import { formatCompactCount, getRepoStat } from "../wiki/repoStats";
 
 type RepoInfoboxProps = {
   readonly image?: WikiImage | undefined;
@@ -212,13 +213,39 @@ function rowsWithDerivedLinks(
   return [...derivedRows, { label: "Links", links: derivedLinks, value: "" }];
 }
 
+function withRepoStatsRow(
+  rows: readonly InfoboxRow[],
+  slug: string,
+): readonly InfoboxRow[] {
+  const stat = getRepoStat(slug);
+  if (stat === null) {
+    return rows;
+  }
+
+  const statsRow: InfoboxRow = {
+    label: "Stars / Forks",
+    value: `★ ${formatCompactCount(stat.stars)} / ⑂ ${formatCompactCount(stat.forks)} · ${stat.fetchedAt} 기준`,
+  };
+
+  const repositoryIndex = rows.findIndex((row) => row.label === "Repository");
+  if (repositoryIndex === -1) {
+    return [statsRow, ...rows];
+  }
+
+  return [
+    ...rows.slice(0, repositoryIndex + 1),
+    statsRow,
+    ...rows.slice(repositoryIndex + 1),
+  ];
+}
+
 export function RepoInfobox({
   image,
   rows,
   slug,
   title,
 }: RepoInfoboxProps): ReactElement {
-  const infoboxRows = rowsWithDerivedLinks(rows, slug);
+  const infoboxRows = withRepoStatsRow(rowsWithDerivedLinks(rows, slug), slug);
 
   return (
     <table aria-label="repository information" className="repo-infobox">

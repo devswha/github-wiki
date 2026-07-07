@@ -6,11 +6,33 @@ import { CategoryStrip } from "../components/CategoryStrip";
 import { PageMeta } from "../components/PageMeta";
 import { homePanels } from "../wiki/fixtures";
 import { buildRouteTitle, siteMetaDescription } from "../wiki/meta";
+import { formatCompactCount, getRepoStat } from "../wiki/repoStats";
 
 const homeCategories = [
   { label: "Github.wiki", path: "/w/category/github-wiki" },
   { label: "저장소 문서", path: "/w/category/repository-article" },
 ];
+
+function renderStarBadge(href: string | undefined): ReactElement | null {
+  if (href === undefined || !href.startsWith("/w/")) {
+    return null;
+  }
+
+  const slug = decodeURIComponent(href.slice(3).split("#")[0] ?? "");
+  const stat = getRepoStat(slug);
+  if (stat === null) {
+    return null;
+  }
+
+  return (
+    <span
+      aria-label={`GitHub 스타 ${stat.stars.toLocaleString("en-US")}`}
+      className="home-panel-star"
+    >
+      ★ {formatCompactCount(stat.stars)}
+    </span>
+  );
+}
 
 export function HomePage(): ReactElement {
   return (
@@ -40,11 +62,14 @@ export function HomePage(): ReactElement {
               <ul>
                 {panel.items.map((item) => (
                   <li key={`${panel.title}:${item.label}`}>
-                    {item.href === undefined ? (
-                      <span className="home-panel-label">{item.label}</span>
-                    ) : (
-                      <Link to={item.href}>{item.label}</Link>
-                    )}
+                    <span className="home-panel-primary">
+                      {item.href === undefined ? (
+                        <span className="home-panel-label">{item.label}</span>
+                      ) : (
+                        <Link to={item.href}>{item.label}</Link>
+                      )}
+                      {renderStarBadge(item.href)}
+                    </span>
                     <span>{item.description}</span>
                   </li>
                 ))}
