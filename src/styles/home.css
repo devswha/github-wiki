@@ -98,8 +98,8 @@
 }
 
 .home-panel .home-panel-star {
-  color: var(--wiki-accent-dark);
-  font-size: 0.78rem;
-  font-weight: 600;
+  color: var(--wiki-muted);
+  font-size: 0.8rem;
+  font-weight: 400;
   white-space: nowrap;
 }

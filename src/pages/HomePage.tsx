@@ -29,7 +29,7 @@ function renderStarBadge(href: string | undefined): ReactElement | null {
       aria-label={`GitHub 스타 ${stat.stars.toLocaleString("en-US")}`}
       className="home-panel-star"
     >
-      ⭐ {formatCompactCount(stat.stars)}
+      스타 {formatCompactCount(stat.stars)}
     </span>
   );
 }

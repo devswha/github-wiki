@@ -11,9 +11,9 @@
   --wiki-muted: rgba(33, 37, 41, 0.75);
   --wiki-link: #0275d8;
   --wiki-link-active: #014c8c;
-  --wiki-link-external: #00766c;
+  --wiki-link-external: #009900;
   --wiki-link-hover: #0263b8;
-  --wiki-link-missing: #c0392b;
+  --wiki-link-missing: #ff0000;
   --wiki-link-visited: #6f42c1;
   --wiki-accent: #008276;
   --wiki-accent-dark: #00766c;
@@ -52,7 +52,7 @@
   --wiki-muted: rgba(224, 224, 224, 0.72);
   --wiki-link: #ec9f19;
   --wiki-link-active: #f1b342;
-  --wiki-link-external: #74c7d7;
+  --wiki-link-external: #4fc04f;
   --wiki-link-hover: #bd7f14;
   --wiki-link-missing: #ff8f8f;
   --wiki-link-visited: #c9a4ff;

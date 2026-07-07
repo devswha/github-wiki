@@ -63,11 +63,6 @@ a.article-link-external:visited {
   color: var(--wiki-link-external);
 }
 
-.article-link-external::after {
-  content: "↗";
-  margin-left: 3px;
-  font-size: 0.78em;
-}
 
 a.article-link-missing:link,
 a.article-link-missing:visited {
