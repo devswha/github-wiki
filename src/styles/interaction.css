@@ -104,19 +104,19 @@ a.article-link-missing:visited {
 .article-body-table {
   width: 100%;
   min-width: 520px;
-  border: 2px solid var(--wiki-border-strong);
+  border: 1px solid var(--wiki-border);
   border-collapse: collapse;
   background: var(--wiki-surface);
   color: var(--wiki-text);
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 .article-body-table caption {
   padding: 6px 8px;
-  border: 2px solid var(--wiki-border-strong);
+  border: 1px solid var(--wiki-border);
   border-bottom: 0;
-  background: var(--wiki-table-head-bg);
+  background: var(--wiki-surface);
   color: var(--wiki-text);
   font-weight: 700;
   text-align: center;
@@ -124,20 +124,20 @@ a.article-link-missing:visited {
 
 .article-body-table th,
 .article-body-table td {
-  padding: 5px 10px;
+  padding: 7px 10px;
   border: 1px solid var(--wiki-border);
   vertical-align: top;
   overflow-wrap: anywhere;
 }
 
 .article-body-table th {
-  background: var(--wiki-table-head-bg);
+  background: var(--wiki-surface);
   font-weight: 700;
   text-align: left;
 }
 
 .article-body-table tbody tr:nth-child(even) td {
-  background: var(--wiki-table-row-alt);
+  background: transparent;
 }
 
 .article-card-grid {
