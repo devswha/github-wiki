@@ -22,3 +22,14 @@ createRoot(rootElement).render(
     <App />
   </StrictMode>,
 );
+
+// Vercel Web Analytics — production only, zero npm dependency. The script is
+// served by Vercel at /_vercel/insights/script.js and auto-tracks SPA route
+// changes via the History API. It is cookieless and collects no personal data.
+// In dev/test import.meta.env.PROD is false, so nothing is injected.
+if (import.meta.env.PROD) {
+  const analyticsScript = document.createElement("script");
+  analyticsScript.defer = true;
+  analyticsScript.src = "/_vercel/insights/script.js";
+  document.head.appendChild(analyticsScript);
+}
