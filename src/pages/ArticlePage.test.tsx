@@ -64,7 +64,7 @@ describe("ArticlePage", () => {
     );
     expect(within(infobox).getByRole("link", { name: "공식 사이트" })).toHaveAttribute(
       "href",
-      "https://patina.vibetip.help",
+      "https://patina.vibetip.help?utm_source=github-wiki&utm_medium=wiki&utm_campaign=vibetip",
     );
     expect(infobox).not.toHaveTextContent("성격");
     expect(infobox).not.toHaveTextContent("패키지");

@@ -88,7 +88,7 @@ test("final patina article route renders repo-name title and GitHub icon", async
   );
   await expect(infobox.getByRole("link", { name: "공식 사이트" })).toHaveAttribute(
     "href",
-    "https://patina.vibetip.help",
+    "https://patina.vibetip.help?utm_source=github-wiki&utm_medium=wiki&utm_campaign=vibetip",
   );
   await expect(page.getByRole("navigation", { name: "목차" })).toContainText("용도와 한계");
   await expect(page.getByRole("heading", { name: "벤치마크" })).toBeVisible();

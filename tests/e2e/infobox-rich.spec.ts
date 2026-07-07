@@ -132,7 +132,7 @@ test("trimmed patina infobox stays readable on mobile", async ({
   await expect(infobox.getByRole("link", { name: "GitHub" })).toBeVisible();
   await expect(infobox.getByRole("link", { name: "공식 사이트" })).toHaveAttribute(
     "href",
-    "https://patina.vibetip.help",
+    "https://patina.vibetip.help?utm_source=github-wiki&utm_medium=wiki&utm_campaign=vibetip",
   );
   await expect(infobox.getByRole("row", { name: /성격/u })).toHaveCount(0);
   await expect(infobox.getByRole("row", { name: /^패키지/u })).toHaveCount(0);
