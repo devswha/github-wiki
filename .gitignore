@@ -39,3 +39,6 @@ pnpm-debug.log*
 
 # GJC runtime session state
 .gjc/
+
+# insane-review response cache (per-project working artifacts)
+.insane-review/

@@ -1,5 +1,6 @@
 import { render, screen, within } from "@testing-library/react";
 
+import { formatCompactCount, getRepoStat } from "../wiki/repoStats";
 import type { InfoboxRow } from "../wiki/types";
 
 import { RepoInfobox } from "./RepoInfobox";
@@ -17,9 +18,14 @@ describe("RepoInfobox stars/forks row", () => {
     const infobox = screen.getByRole("table", { name: /repository information/i });
     const statsRow = within(infobox).getByRole("row", { name: /스타 \/ 포크/u });
 
-    // value cell is numbers only: "<stars> / <forks>"
-    expect(statsRow).toHaveTextContent(/136\.6k\s*\/\s*\d/u);
-    // no icons / badges / as-of noise
+    // Derive expected text from the collected stats so the assertion never
+    // breaks when the build-time collector refreshes star/fork counts.
+    const stat = getRepoStat("anthropics/claude-code");
+    expect(stat).not.toBeNull();
+    const expected = `${formatCompactCount(stat!.stars)} / ${formatCompactCount(stat!.forks)}`;
+    expect(statsRow).toHaveTextContent(expected);
+
+    // numbers only — no icons / badges / as-of noise
     expect(statsRow).not.toHaveTextContent("⭐");
     expect(statsRow).not.toHaveTextContent("🍴");
     expect(statsRow).not.toHaveTextContent("기준");

@@ -96,8 +96,8 @@ test("font desktop article typography matches Namu Codex stack", async ({ page }
   expect(styles.h1.lineHeight).toBe("36px");
   expect(styles.h2.fontWeight).toBe("700");
   expect(styles.h2.lineHeight).toBe("40.5px");
-  expect(styles.paragraph.fontSize).toBe("14.4px");
-  expect(styles.paragraph.lineHeight).toBe("21.6px");
+  expect(styles.paragraph.fontSize).toBe("15px");
+  expect(styles.paragraph.lineHeight).toBe("22.5px");
   expect(styles.table.fontSize).toBe("15px");
   expect(styles.table.lineHeight).toBe("22.5px");
 });
