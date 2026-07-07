@@ -1,9 +1,55 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
 
+import { wikiArticles } from "./src/wiki/fixtures";
+
+const SITE_ORIGIN = "https://wiki.vibetip.help";
+
+function buildSitemapXml(): string {
+  const now = new Date().toISOString();
+  const staticEntries = ["/", "/recent-changes", "/recent-discussions"].map((path) => ({
+    loc: `${SITE_ORIGIN}${path}`,
+    lastmod: now,
+  }));
+  const articleEntries = wikiArticles.map((article) => ({
+    loc: `${SITE_ORIGIN}/w/${encodeURIComponent(article.slug)}`,
+    lastmod: article.modifiedAt,
+  }));
+  const categoryEntries = Array.from(
+    new Set(
+      wikiArticles.flatMap((article) =>
+        article.categories.map((category) => category.path),
+      ),
+    ),
+  ).map((path) => ({ loc: `${SITE_ORIGIN}${path}`, lastmod: now }));
+
+  const urls = [...staticEntries, ...articleEntries, ...categoryEntries]
+    .map(
+      (entry) =>
+        `  <url>\n    <loc>${entry.loc}</loc>\n    <lastmod>${entry.lastmod}</lastmod>\n  </url>`,
+    )
+    .join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
+}
+
+const ROBOTS_TXT = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_ORIGIN}/sitemap.xml\n`;
+
 export default defineConfig({
   plugins: [
     react(),
+    {
+      name: "github-wiki-seo-artifacts",
+      apply: "build",
+      generateBundle() {
+        this.emitFile({
+          type: "asset",
+          fileName: "sitemap.xml",
+          source: buildSitemapXml(),
+        });
+        this.emitFile({ type: "asset", fileName: "robots.txt", source: ROBOTS_TXT });
+      },
+    },
     {
       name: "github-wiki-static-asset-404",
       configureServer(server) {

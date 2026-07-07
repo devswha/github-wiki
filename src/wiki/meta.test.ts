@@ -1,4 +1,11 @@
-import { buildArticleTitle, buildRouteTitle, siteMetaDescription } from "./meta";
+import {
+  buildArticleTitle,
+  buildCanonicalUrl,
+  buildRouteTitle,
+  clampDescription,
+  siteMetaDescription,
+  siteOrigin,
+} from "./meta";
 
 describe("wiki metadata", () => {
   it("builds article title for repository page", () => {
@@ -18,5 +25,26 @@ describe("wiki metadata", () => {
   it("describes the repository wiki scaffold without live data claims", () => {
     expect(siteMetaDescription).toContain("repository explanation wiki");
     expect(siteMetaDescription).not.toContain("live GitHub");
+  });
+
+  it("resolves canonical URLs from route paths against the site origin", () => {
+    expect(buildCanonicalUrl("/")).toBe(`${siteOrigin}/`);
+    expect(buildCanonicalUrl("/w/devswha%2Fpatina")).toBe(
+      `${siteOrigin}/w/devswha%2Fpatina`,
+    );
+    expect(buildCanonicalUrl("recent-changes")).toBe(`${siteOrigin}/recent-changes`);
+    expect(buildCanonicalUrl("https://example.com/x")).toBe("https://example.com/x");
+  });
+
+  it("clamps long descriptions to a snippet-safe length with an ellipsis", () => {
+    const short = "짧은 설명";
+    expect(clampDescription(short)).toBe(short);
+
+    const long = "가".repeat(300);
+    const clamped = clampDescription(long);
+    expect(clamped.length).toBeLessThanOrEqual(155);
+    expect(clamped.endsWith("…")).toBe(true);
+
+    expect(clampDescription("  여러   공백\n줄바꿈  ")).toBe("여러 공백 줄바꿈");
   });
 });
