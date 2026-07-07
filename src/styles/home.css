@@ -88,3 +88,18 @@
   padding: 9px 10px;
   font-size: 0.9rem;
 }
+
+.home-panel-primary {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+.home-panel .home-panel-star {
+  color: var(--wiki-accent-dark);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

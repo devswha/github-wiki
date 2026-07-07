@@ -1,5 +1,8 @@
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
+import { fileURLToPath } from "node:url";
+
+import { collectRepoStats } from "./scripts/collect-repo-stats.mjs";
 
 import { wikiArticles } from "./src/wiki/fixtures";
 
@@ -38,6 +41,26 @@ const ROBOTS_TXT = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_ORIGIN}/sitemap.x
 export default defineConfig({
   plugins: [
     react(),
+    {
+      name: "github-wiki-repo-stats",
+      apply: "build",
+      async buildStart() {
+        // Refresh committed GitHub stats before the bundle is built. Fail-safe:
+        // never throws; per-repo errors keep the cached value.
+        try {
+          await collectRepoStats({
+            slugs: wikiArticles.map((article) => article.slug),
+            cachePath: fileURLToPath(
+              new URL("./src/wiki/repoStats.generated.ts", import.meta.url),
+            ),
+            token: process.env["GITHUB_TOKEN"] ?? process.env["GH_TOKEN"],
+            log: (message) => this.info?.(message),
+          });
+        } catch (error) {
+          this.warn(`repo stats collection skipped: ${String(error)}`);
+        }
+      },
+    },
     {
       name: "github-wiki-seo-artifacts",
       apply: "build",
