@@ -36,3 +36,6 @@ pnpm-debug.log*
 .idea/
 .vscode/
 *.swp
+
+# GJC runtime session state
+.gjc/
