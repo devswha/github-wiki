@@ -11,17 +11,18 @@ const baseRows: readonly InfoboxRow[] = [
 ];
 
 describe("RepoInfobox stars/forks row", () => {
-  it("injects a stars/forks row with an as-of date for a repo with stats", () => {
+  it("injects a one-line stars/forks cell with emoji and an as-of date", () => {
     render(<RepoInfobox rows={baseRows} slug="anthropics/claude-code" title="claude-code" />);
 
     const infobox = screen.getByRole("table", { name: /repository information/i });
-    const starsRow = within(infobox).getByRole("row", { name: /스타 \/ 포크/u });
+    const statsCell = within(infobox).getByText(/⭐/u);
 
-    expect(starsRow).toHaveTextContent("136.6k");
-    expect(starsRow).toHaveTextContent("기준");
+    expect(statsCell).toHaveTextContent("136.6k");
+    expect(statsCell).toHaveTextContent("🍴");
+    expect(statsCell).toHaveTextContent("기준");
   });
 
-  it("omits the stars row for a slug without collected stats", () => {
+  it("omits the stars cell for a slug without collected stats", () => {
     render(
       <RepoInfobox
         rows={[
@@ -34,6 +35,6 @@ describe("RepoInfobox stars/forks row", () => {
     );
 
     const infobox = screen.getByRole("table", { name: /repository information/i });
-    expect(within(infobox).queryByRole("row", { name: /스타 \/ 포크/u })).toBeNull();
+    expect(within(infobox).queryByText(/⭐/u)).toBeNull();
   });
 });

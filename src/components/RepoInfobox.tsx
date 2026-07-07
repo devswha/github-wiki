@@ -33,10 +33,11 @@ const infoboxLabelTranslations: ReadonlyMap<string, string> = new Map([
   ["Primary language", "주요 언어"],
   ["Related project", "관련 프로젝트"],
   ["Repository", "저장소"],
-  ["Stars / Forks", "스타 / 포크"],
   ["Topics", "주제"],
   ["Type", "성격"],
 ]);
+
+const REPO_STATS_LABEL = "GitHub";
 
 function displayLabel(label: string): string {
   return infoboxLabelTranslations.get(label) ?? label;
@@ -223,8 +224,8 @@ function withRepoStatsRow(
   }
 
   const statsRow: InfoboxRow = {
-    label: "Stars / Forks",
-    value: `★ ${formatCompactCount(stat.stars)} / ⑂ ${formatCompactCount(stat.forks)} · ${stat.fetchedAt} 기준`,
+    label: REPO_STATS_LABEL,
+    value: `⭐ ${formatCompactCount(stat.stars)}  ·  🍴 ${formatCompactCount(stat.forks)}  ·  ${stat.fetchedAt} 기준`,
   };
 
   const repositoryIndex = rows.findIndex((row) => row.label === "Repository");
@@ -272,19 +273,27 @@ export function RepoInfobox({
             </td>
           </tr>
         )}
-        {infoboxRows.map((row) => (
-          <tr key={row.label}>
-            <th scope="row">{displayLabel(row.label)}</th>
-            <td>
-              {renderValue(row)}
-              {row.links === undefined ? null : (
-                <div className="repo-infobox-links">
-                  {row.links.map(renderLink)}
-                </div>
-              )}
-            </td>
-          </tr>
-        ))}
+        {infoboxRows.map((row) =>
+          row.label === REPO_STATS_LABEL ? (
+            <tr className="repo-infobox-stats" key={row.label}>
+              <td className="repo-infobox-stats-cell" colSpan={2}>
+                {row.value}
+              </td>
+            </tr>
+          ) : (
+            <tr key={row.label}>
+              <th scope="row">{displayLabel(row.label)}</th>
+              <td>
+                {renderValue(row)}
+                {row.links === undefined ? null : (
+                  <div className="repo-infobox-links">
+                    {row.links.map(renderLink)}
+                  </div>
+                )}
+              </td>
+            </tr>
+          ),
+        )}
       </tbody>
     </table>
   );

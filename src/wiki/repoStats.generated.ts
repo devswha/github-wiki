@@ -11,32 +11,32 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "NousResearch/hermes-agent": {
-    "stars": 210504,
-    "forks": 38579,
-    "pushedAt": "2026-07-07T04:14:36Z",
+    "stars": 210521,
+    "forks": 38588,
+    "pushedAt": "2026-07-07T05:48:24Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/gajae-code": {
-    "stars": 1654,
+    "stars": 1656,
     "forks": 237,
-    "pushedAt": "2026-07-07T05:08:23Z",
+    "pushedAt": "2026-07-07T06:03:21Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-    "stars": 37485,
-    "forks": 3378,
+    "stars": 37486,
+    "forks": 3379,
     "pushedAt": "2026-07-07T04:05:23Z",
     "fetchedAt": "2026-07-07"
   },
   "Yeachan-Heo/oh-my-codex": {
-    "stars": 31747,
+    "stars": 31746,
     "forks": 2461,
     "pushedAt": "2026-07-07T05:17:44Z",
     "fetchedAt": "2026-07-07"
   },
   "anthropics/claude-code": {
-    "stars": 136593,
-    "forks": 21942,
+    "stars": 136595,
+    "forks": 21943,
     "pushedAt": "2026-07-06T22:51:16Z",
     "fetchedAt": "2026-07-07"
   },
@@ -47,33 +47,33 @@ export const repoStats: Record<string, RepoStat> = {
     "fetchedAt": "2026-07-07"
   },
   "code-yeongyu/oh-my-openagent": {
-    "stars": 65086,
-    "forks": 5314,
+    "stars": 65090,
+    "forks": 5315,
     "pushedAt": "2026-07-07T04:15:32Z",
     "fetchedAt": "2026-07-07"
   },
   "devswha/patina": {
     "stars": 238,
     "forks": 26,
-    "pushedAt": "2026-07-07T04:03:05Z",
+    "pushedAt": "2026-07-07T05:41:01Z",
     "fetchedAt": "2026-07-07"
   },
   "facebook/react": {
-    "stars": 246278,
-    "forks": 51228,
+    "stars": 246279,
+    "forks": 51227,
     "pushedAt": "2026-07-07T05:31:01Z",
     "fetchedAt": "2026-07-07"
   },
   "omnigent-ai/omnigent": {
-    "stars": 6486,
-    "forks": 858,
-    "pushedAt": "2026-07-07T04:55:30Z",
+    "stars": 6488,
+    "forks": 860,
+    "pushedAt": "2026-07-07T05:58:55Z",
     "fetchedAt": "2026-07-07"
   },
   "openai/codex": {
-    "stars": 95925,
+    "stars": 95929,
     "forks": 14239,
-    "pushedAt": "2026-07-07T05:32:27Z",
+    "pushedAt": "2026-07-07T06:03:19Z",
     "fetchedAt": "2026-07-07"
   }
 };
