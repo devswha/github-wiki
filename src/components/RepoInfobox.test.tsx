@@ -11,18 +11,21 @@ const baseRows: readonly InfoboxRow[] = [
 ];
 
 describe("RepoInfobox stars/forks row", () => {
-  it("injects a one-line stars/forks cell with emoji and an as-of date", () => {
+  it("renders a plain 스타 / 포크 row with numbers only (no icons/badges)", () => {
     render(<RepoInfobox rows={baseRows} slug="anthropics/claude-code" title="claude-code" />);
 
     const infobox = screen.getByRole("table", { name: /repository information/i });
-    const statsCell = within(infobox).getByText(/⭐/u);
+    const statsRow = within(infobox).getByRole("row", { name: /스타 \/ 포크/u });
 
-    expect(statsCell).toHaveTextContent("136.6k");
-    expect(statsCell).toHaveTextContent("🍴");
-    expect(statsCell).toHaveTextContent("기준");
+    // value cell is numbers only: "<stars> / <forks>"
+    expect(statsRow).toHaveTextContent(/136\.6k\s*\/\s*\d/u);
+    // no icons / badges / as-of noise
+    expect(statsRow).not.toHaveTextContent("⭐");
+    expect(statsRow).not.toHaveTextContent("🍴");
+    expect(statsRow).not.toHaveTextContent("기준");
   });
 
-  it("omits the stars cell for a slug without collected stats", () => {
+  it("omits the stars row for a slug without collected stats", () => {
     render(
       <RepoInfobox
         rows={[
@@ -35,6 +38,6 @@ describe("RepoInfobox stars/forks row", () => {
     );
 
     const infobox = screen.getByRole("table", { name: /repository information/i });
-    expect(within(infobox).queryByText(/⭐/u)).toBeNull();
+    expect(within(infobox).queryByRole("row", { name: /스타 \/ 포크/u })).toBeNull();
   });
 });
