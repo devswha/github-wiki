@@ -178,7 +178,3 @@
   padding: 0;
 }
 
-/* NC(CC BY-NC-SA) 전환 문서에서는 상업 제품(patina) 프로모를 숨긴다. */
-[data-nc-license="1"] .wiki-nav .patina-header-star {
-  display: none !important;
-}

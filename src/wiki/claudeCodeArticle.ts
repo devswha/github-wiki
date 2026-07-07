@@ -53,6 +53,12 @@ export const claudeCodeArticle = {
       ],
       links: [
         {
+          description: "이 주제를 다루는 나무위키 문서다.",
+          href: "https://namu.wiki/w/Claude%20Code",
+          label: "나무위키 문서",
+          variant: "external",
+        },
+        {
           description: "설치, 플러그인, 데이터 정책을 담은 저장소다.",
           href: "https://github.com/anthropics/claude-code",
           label: "GitHub 저장소",

@@ -57,6 +57,12 @@ export const codexCliArticle = {
       ],
       links: [
         {
+          description: "이 주제를 다루는 나무위키 문서다.",
+          href: "https://namu.wiki/w/Codex",
+          label: "나무위키 문서",
+          variant: "external",
+        },
+        {
           description: "설치, 인증, 기여 문서를 담은 저장소다.",
           href: "https://github.com/openai/codex",
           label: "GitHub 저장소",

@@ -185,29 +185,6 @@
   display: inline;
 }
 
-.article-license {
-  margin-top: 18px;
-  padding: 10px 12px;
-  border: 1px solid var(--wiki-border);
-  border-left: 3px solid var(--wiki-accent);
-  background: var(--wiki-surface);
-  font-size: 0.8rem;
-  line-height: 1.5;
-  color: var(--wiki-muted);
-}
-
-.article-license p {
-  margin: 0;
-}
-
-.article-license p + p {
-  margin-top: 4px;
-}
-
-.article-license a {
-  color: var(--wiki-link);
-}
-
 
 .repo-infobox-value-link {
   display: inline;
