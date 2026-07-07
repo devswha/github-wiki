@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-06-05T02:31:00.000Z",
+  modifiedAt: "2026-07-07T01:02:31.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -36,6 +36,11 @@ export const ohMyClaudecodeArticle = {
       label: "Homepage",
       value: "oh-my-claudecode website",
       valueHref: "https://yeachan-heo.github.io/oh-my-claudecode-website",
+    },
+    {
+      label: "Latest release",
+      value: "v4.15.2",
+      valueHref: "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v4.15.2",
     },
     { label: "Links", value: "" },
   ],
@@ -110,6 +115,7 @@ export const ohMyClaudecodeArticle = {
       body: [
         "기능 표는 Team, omc team, ccg, Autopilot, Ultrawork, Ralph, Pipeline 같은 실행 모드를 나눈다. 각 모드는 완전 자율 개발, 병렬 수정, 지속 완료, 순차 처리처럼 서로 다른 작업 성격에 맞춰져 있다.",
         "개발자 경험 쪽에서는 magic keyword, HUD status bar, skill learning, analytics and cost tracking이 전면에 나온다. 아키텍처 문서는 hook, skill, agent, state 네 시스템이 사용자 입력에서 실행과 상태 추적으로 이어지는 흐름을 설명한다.",
+        "2026-07-03 v4.15.2 릴리스는 기본 HUD preset 적용, UserPromptSubmit hook timeout, OMC_STATE_DIR 기반 learner state path 같은 안정성 수정을 묶은 패치 릴리스다.",
         "project-memory는 레포 단위로 누적되는 지식 계층으로, 다음 세션이 같은 맥락을 다시 읽지 않아도 되게 한다.",
         "코드 탐색에는 AST-Grep 기반 구조 검색이 들어가, 단순 텍스트 매칭보다 구문 구조로 코드를 찾고 바꾼다.",
       ],

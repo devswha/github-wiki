@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyCodexArticle = {
   slug: "Yeachan-Heo/oh-my-codex",
   title: "oh-my-codex",
-  modifiedAt: "2026-06-05T02:32:00.000Z",
+  modifiedAt: "2026-07-07T01:02:31.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Codex 확장", path: "/w/category/codex-extension" },
@@ -37,6 +37,11 @@ export const ohMyCodexArticle = {
       value: "oh-my-codex website",
       valueHref: "https://yeachan-heo.github.io/oh-my-codex-website/",
     },
+    {
+      label: "Latest release",
+      value: "v0.19.0",
+      valueHref: "https://github.com/Yeachan-Heo/oh-my-codex/releases/tag/v0.19.0",
+    },
     { label: "Links", value: "" },
   ],
   sections: [
@@ -46,7 +51,7 @@ export const ohMyCodexArticle = {
       body: [
         "README는 Yeachan-Heo/oh-my-codex 저장소와 oh-my-codex npm 패키지를 공식 OMX 프로젝트와 설치 대상이라고 못박는다. 이 프로젝트는 OpenAI Codex CLI를 대체하지 않고, Codex를 실행 엔진으로 둔 워크플로우 계층이다.",
         "OMX가 더해 주는 것은 강한 기본 세션, 일관된 workflow, role keyword와 skill 재사용, 그리고 .omx/ 아래의 plan, log, memory, runtime state 저장이다. README는 plain Codex만 원한다면 OMX가 필요 없을 수 있다고도 말한다.",
-        "릴리스 흐름이 빠른 편이라, README와 변경 로그는 v0.17.0 같은 버전 표기로 명령 표면과 기본값이 갱신된 시점을 구분한다.",
+        "릴리스 흐름이 빠른 편이라, README와 변경 로그는 v0.19.0 같은 버전 표기로 명령 표면과 기본값이 갱신된 시점을 구분한다. v0.19.0은 planning-gate와 handoff artifact 실행 경로를 잠그고, conductor contract와 Ralplan closeout 처리를 단단히 한 안전성 릴리스로 설명된다.",
       ],
       subsections: [
         {
