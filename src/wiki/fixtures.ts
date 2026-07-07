@@ -28,6 +28,18 @@ import { litellmArticle } from "./litellmArticle";
 import { ollamaArticle } from "./ollamaArticle";
 import { openWebuiArticle } from "./openWebuiArticle";
 import { autogptArticle } from "./autogptArticle";
+import { geminiCliArticle } from "./geminiCliArticle";
+import { crewaiArticle } from "./crewaiArticle";
+import { autogenArticle } from "./autogenArticle";
+import { nanobotArticle } from "./nanobotArticle";
+import { deerFlowArticle } from "./deerFlowArticle";
+import { libreChatArticle } from "./libreChatArticle";
+import { cherryStudioArticle } from "./cherryStudioArticle";
+import { copilotKitArticle } from "./copilotKitArticle";
+import { firecrawlArticle } from "./firecrawlArticle";
+import { crawl4aiArticle } from "./crawl4aiArticle";
+import { ragflowArticle } from "./ragflowArticle";
+import { vllmArticle } from "./vllmArticle";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
@@ -58,6 +70,18 @@ export const wikiArticles: readonly WikiArticle[] = [
   ollamaArticle,
   openWebuiArticle,
   autogptArticle,
+  geminiCliArticle,
+  crewaiArticle,
+  autogenArticle,
+  nanobotArticle,
+  deerFlowArticle,
+  libreChatArticle,
+  cherryStudioArticle,
+  copilotKitArticle,
+  firecrawlArticle,
+  crawl4aiArticle,
+  ragflowArticle,
+  vllmArticle,
   ...sampleArticles,
 ];
 
@@ -199,6 +223,66 @@ export const homePanels = [
         label: "Significant-Gravitas/AutoGPT",
         href: "/w/Significant-Gravitas%2FAutoGPT",
         description: "AI 에이전트 빌드·배포 플랫폼",
+      },
+      {
+        label: "google-gemini/gemini-cli",
+        href: "/w/google-gemini%2Fgemini-cli",
+        description: "터미널 속 Gemini 코딩 에이전트",
+      },
+      {
+        label: "crewAIInc/crewAI",
+        href: "/w/crewAIInc%2FcrewAI",
+        description: "역할 기반 멀티 에이전트 오케스트레이션",
+      },
+      {
+        label: "microsoft/autogen",
+        href: "/w/microsoft%2Fautogen",
+        description: "Microsoft agentic AI 프레임워크",
+      },
+      {
+        label: "bytedance/deer-flow",
+        href: "/w/bytedance%2Fdeer-flow",
+        description: "롱호라이즌 슈퍼에이전트 하네스",
+      },
+      {
+        label: "HKUDS/nanobot",
+        href: "/w/HKUDS%2Fnanobot",
+        description: "경량 오픈소스 AI 에이전트",
+      },
+      {
+        label: "danny-avila/LibreChat",
+        href: "/w/danny-avila%2FLibreChat",
+        description: "에이전트·MCP 갖춘 자가호스팅 챗",
+      },
+      {
+        label: "CherryHQ/cherry-studio",
+        href: "/w/CherryHQ%2Fcherry-studio",
+        description: "300+ 어시스턴트 AI 생산성 스튜디오",
+      },
+      {
+        label: "CopilotKit/CopilotKit",
+        href: "/w/CopilotKit%2FCopilotKit",
+        description: "에이전트·generative UI 프런트엔드",
+      },
+      {
+        label: "firecrawl/firecrawl",
+        href: "/w/firecrawl%2Ffirecrawl",
+        description: "LLM용 웹 검색·스크레이프 API",
+      },
+      {
+        label: "unclecode/crawl4ai",
+        href: "/w/unclecode%2Fcrawl4ai",
+        description: "LLM 친화적 웹 크롤러·스크레이퍼",
+      },
+      {
+        label: "infiniflow/ragflow",
+        href: "/w/infiniflow%2Fragflow",
+        description: "RAG + 에이전트 컨텍스트 엔진",
+      },
+      {
+        label: "vllm-project/vllm",
+        href: "/w/vllm-project%2Fvllm",
+        description: "고처리량 LLM 추론·서빙 엔진",
       },
     ],
   },
