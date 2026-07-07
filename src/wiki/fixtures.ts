@@ -1,7 +1,7 @@
 import type { HomePanel, WikiArticle } from "./types";
 import { gajaeCodeArticle } from "./gajaeCodeArticle";
-import { claudeCodeNamuArticle } from "./claudeCodeNamuArticle";
-import { codexNamuArticle } from "./codexNamuArticle";
+import { claudeCodeArticle } from "./claudeCodeArticle";
+import { codexCliArticle } from "./codexCliArticle";
 import { hermesAgentArticle } from "./hermesAgentArticle";
 import { kSkillArticle } from "./kSkillArticle";
 import { lazycodexArticle } from "./lazycodexArticle";
@@ -25,8 +25,8 @@ import { difyArticle } from "./difyArticle";
 import { langchainArticle } from "./langchainArticle";
 import { browserUseArticle } from "./browserUseArticle";
 import { litellmArticle } from "./litellmArticle";
-import { ollamaNamuArticle } from "./ollamaNamuArticle";
-import { openWebuiNamuArticle } from "./openWebuiNamuArticle";
+import { ollamaArticle } from "./ollamaArticle";
+import { openWebuiArticle } from "./openWebuiArticle";
 import { autogptArticle } from "./autogptArticle";
 import { geminiCliArticle } from "./geminiCliArticle";
 import { crewaiArticle } from "./crewaiArticle";
@@ -43,8 +43,8 @@ import { vllmArticle } from "./vllmArticle";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
-  claudeCodeNamuArticle,
-  codexNamuArticle,
+  claudeCodeArticle,
+  codexCliArticle,
   hermesAgentArticle,
   kSkillArticle,
   lazycodexArticle,
@@ -67,8 +67,8 @@ export const wikiArticles: readonly WikiArticle[] = [
   langchainArticle,
   browserUseArticle,
   litellmArticle,
-  ollamaNamuArticle,
-  openWebuiNamuArticle,
+  ollamaArticle,
+  openWebuiArticle,
   autogptArticle,
   geminiCliArticle,
   crewaiArticle,

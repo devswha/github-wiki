@@ -43,6 +43,12 @@ export const ollamaArticle = {
       ],
       links: [
         {
+          description: "이 주제를 다루는 나무위키 문서다.",
+          href: "https://namu.wiki/w/Ollama",
+          label: "나무위키 문서",
+          variant: "external",
+        },
+        {
           description: "Ollama 소스와 릴리스를 확인할 수 있는 저장소다.",
           href: "https://github.com/ollama/ollama",
           label: "GitHub 저장소",

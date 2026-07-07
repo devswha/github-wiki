@@ -43,6 +43,12 @@ export const openWebuiArticle = {
       ],
       links: [
         {
+          description: "이 주제를 다루는 나무위키 문서다.",
+          href: "https://namu.wiki/w/Open%20WebUI",
+          label: "나무위키 문서",
+          variant: "external",
+        },
+        {
           description: "Open WebUI 소스와 배포 문서로 이어지는 저장소다.",
           href: "https://github.com/open-webui/open-webui",
           label: "GitHub 저장소",
