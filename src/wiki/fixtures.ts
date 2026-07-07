@@ -3,6 +3,7 @@ import { gajaeCodeArticle } from "./gajaeCodeArticle";
 import { claudeCodeArticle } from "./claudeCodeArticle";
 import { codexCliArticle } from "./codexCliArticle";
 import { hermesAgentArticle } from "./hermesAgentArticle";
+import { kSkillArticle } from "./kSkillArticle";
 import { lazycodexArticle } from "./lazycodexArticle";
 import { ohMyClaudecodeArticle } from "./ohMyClaudecodeArticle";
 import { ohMyCodexArticle } from "./ohMyCodexArticle";
@@ -17,6 +18,7 @@ export const wikiArticles: readonly WikiArticle[] = [
   claudeCodeArticle,
   codexCliArticle,
   hermesAgentArticle,
+  kSkillArticle,
   lazycodexArticle,
   ohMyClaudecodeArticle,
   ohMyCodexArticle,
@@ -31,6 +33,11 @@ export const homePanels = [
   {
     title: "최근 편집된 저장소",
     items: [
+      {
+        label: "NomaDamas/k-skill",
+        href: "/w/NomaDamas%2Fk-skill",
+        description: "한국 생활·공공·업무를 코딩 에이전트에 붙이는 스킬 모음집",
+      },
       {
         label: "Yeachan-Heo/gajae-code",
         href: "/w/Yeachan-Heo%2Fgajae-code",
