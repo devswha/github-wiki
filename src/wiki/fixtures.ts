@@ -1,5 +1,7 @@
 import type { HomePanel, WikiArticle } from "./types";
 import { gajaeCodeArticle } from "./gajaeCodeArticle";
+import { claudeCodeArticle } from "./claudeCodeArticle";
+import { codexCliArticle } from "./codexCliArticle";
 import { hermesAgentArticle } from "./hermesAgentArticle";
 import { lazycodexArticle } from "./lazycodexArticle";
 import { ohMyClaudecodeArticle } from "./ohMyClaudecodeArticle";
@@ -12,6 +14,8 @@ import { trendingRepositoriesArticle } from "./trendingRepositoriesArticle";
 
 export const wikiArticles: readonly WikiArticle[] = [
   gajaeCodeArticle,
+  claudeCodeArticle,
+  codexCliArticle,
   hermesAgentArticle,
   lazycodexArticle,
   ohMyClaudecodeArticle,
@@ -48,9 +52,19 @@ export const homePanels = [
         description: "Claude Code용 OMC 멀티 에이전트 확장",
       },
       {
+        label: "anthropics/claude-code",
+        href: "/w/anthropics%2Fclaude-code",
+        description: "oh-my-claudecode가 확장하는 터미널 코딩 에이전트 기반",
+      },
+      {
         label: "Yeachan-Heo/oh-my-codex",
         href: "/w/Yeachan-Heo%2Foh-my-codex",
         description: "OpenAI Codex CLI용 OMX workflow layer",
+      },
+      {
+        label: "openai/codex",
+        href: "/w/openai%2Fcodex",
+        description: "oh-my-codex·lazycodex가 실행 엔진으로 삼는 Codex CLI",
       },
       {
         label: "code-yeongyu/oh-my-openagent",
