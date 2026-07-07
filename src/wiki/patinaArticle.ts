@@ -1,5 +1,11 @@
 import type { WikiArticle } from "./types";
 
+// patina 랜딩(전환 표면) 링크는 flask 콘텐츠 파이프라인과 같은 UTM 택소노미로 스탬프한다:
+// utm_source=<플랫폼>, utm_medium=<채널>, utm_campaign=<캠페인>. 위키 유입은 source=github-wiki,
+// medium=wiki, 기본 campaign=vibetip. 랜딩이 first-touch UTM을 Pro 체크아웃까지 보존한다.
+const patinaLandingUrl =
+  "https://patina.vibetip.help?utm_source=github-wiki&utm_medium=wiki&utm_campaign=vibetip";
+
 export const patinaArticle = {
   slug: "devswha/patina",
   title: "patina",
@@ -31,7 +37,7 @@ export const patinaArticle = {
     {
       label: "Homepage",
       value: "patina.vibetip.help",
-      valueHref: "https://patina.vibetip.help",
+      valueHref: patinaLandingUrl,
     },
     {
       label: "Latest release",
@@ -42,7 +48,7 @@ export const patinaArticle = {
       label: "Links",
       links: [
         { label: "GitHub", href: "https://github.com/devswha/patina" },
-        { label: "공식 사이트", href: "https://patina.vibetip.help" },
+        { label: "공식 사이트", href: patinaLandingUrl },
       ],
       value: "",
     },
