@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const trendingRepositoriesArticle = {
   slug: "Github.wiki/trending-repositories",
   title: "트렌딩 저장소 조사",
-  modifiedAt: "2026-06-22T04:08:16.000Z",
+  modifiedAt: "2026-07-08T01:10:00.000Z",
   categories: [
     { label: "Github.wiki", path: "/w/category/github-wiki" },
     { label: "저장소 문서", path: "/w/category/repository-article" },
@@ -24,7 +24,7 @@ export const trendingRepositoriesArticle = {
     {
       label: "Links",
       links: [
-        { label: "GitHub search", href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc" },
+        { label: "GitHub search", href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc" },
         { label: "github-wiki", href: "https://github.com/devswha/github-wiki" },
       ],
       value: "",
@@ -35,7 +35,7 @@ export const trendingRepositoriesArticle = {
       id: "overview",
       title: "개요",
       body: [
-        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-06-22 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
+        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-07-08 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
         "선정 기준은 별 수만이 아니라 Github.wiki의 기존 문서 축인 AI 에이전트, 개발 워크플로우, 문서화 도구와의 관련성이다. 시스템 프롬프트 덤프처럼 공개 재배포 리스크가 큰 저장소는 후보에서 제외한다.",
       ],
     },
@@ -43,7 +43,7 @@ export const trendingRepositoriesArticle = {
       id: "agent-tools",
       title: "AI 에이전트와 개발 도구 후보",
       body: [
-        "2026-06-22에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, agentic coding 쿼리를 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
+        "2026-07-08에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, coding agent 쿼리를 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
       ],
       table: {
         caption: "AI 에이전트 / 개발 도구 후보",
@@ -51,21 +51,21 @@ export const trendingRepositoriesArticle = {
         rows: [
           ["NousResearch/hermes-agent", "Python", "skills, memory, tools를 묶은 개인 에이전트 런타임 계열이다."],
           ["OpenHands/OpenHands", "Python", "AI-driven development를 전면에 둔 오픈소스 코딩 에이전트다."],
-          ["daytonaio/daytona", "TypeScript", "AI 생성 코드 실행용 보안 인프라라는 포지션이 강하다."],
-          ["anomalyco/opencode", "TypeScript", "오픈소스 코딩 에이전트 계열이라 기존 OpenCode 확장 문서와 연결된다."],
-          ["obra/superpowers", "Shell", "agentic skills framework와 개발 방법론을 표방한다."],
+          ["santifer/career-ops", "JavaScript", "Claude Code, Gemini, Codex, OpenCode 같은 AI coding CLI에서 로컬로 도는 구직 자동화 도구다."],
+          ["Panniantong/Agent-Reach", "Python", "AI agent에 웹·소셜 검색 표면을 붙이는 CLI 포지션이라 에이전트 도구 문서와 맞닿아 있다."],
+          ["sickn33/antigravity-awesome-skills", "Python", "여러 AI coding CLI용 agentic skills 라이브러리를 표방해서 스킬 기반 도구 흐름과 비교하기 좋다."],
         ],
       },
       links: [
         {
-          description: "topic:ai-agent, stars:>1000, pushed:>2026-06-01 조건으로 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          description: "topic:ai-agent, stars:>1000, pushed:>2026-07-01 조건으로 확인한 검색 결과다.",
+          href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "AI agent 검색",
           variant: "external",
         },
         {
           description: "developer-tools 주제에서 최근 갱신된 대형 저장소를 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Adeveloper-tools+stars%3A%3E5000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          href: "https://github.com/search?q=topic%3Adeveloper-tools+stars%3A%3E5000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "developer tools 검색",
           variant: "external",
         },
@@ -75,7 +75,7 @@ export const trendingRepositoriesArticle = {
       id: "documentation-tools",
       title: "문서화 도구 후보",
       body: [
-        "문서화 축에서는 Storybook, Mermaid, Docusaurus, AppFlowy, tldr-pages가 반복적으로 상위권에 잡힌다. Github.wiki가 저장소 설명 위키라는 점을 고려하면, 문서 생성이나 지식 정리 경험을 비교하는 문서 후보로 쓸 수 있다.",
+        "문서화 축에서는 Storybook, Mermaid, Docusaurus, tldr-pages, DevDocs가 반복적으로 상위권에 잡힌다. Github.wiki가 저장소 설명 위키라는 점을 고려하면, 문서 생성이나 지식 정리 경험을 비교하는 문서 후보로 쓸 수 있다.",
       ],
       table: {
         caption: "문서화 관련 후보",
@@ -84,14 +84,14 @@ export const trendingRepositoriesArticle = {
           ["storybookjs/storybook", "TypeScript", "컴포넌트 문서화와 테스트 워크숍 표준에 가깝다."],
           ["mermaid-js/mermaid", "TypeScript", "텍스트 기반 다이어그램 문법으로 개발 문서와 잘 맞는다."],
           ["facebook/docusaurus", "TypeScript", "정적 문서 사이트 생성 도구로 위키형 문서와 비교하기 좋다."],
-          ["AppFlowy-IO/AppFlowy", "Dart", "AI 협업 워크스페이스와 오픈소스 Notion 대안 포지션이다."],
           ["tldr-pages/tldr", "Markdown", "콘솔 명령 치트시트 지식베이스로 짧은 문서 구조 참고가 된다."],
+          ["freeCodeCamp/devdocs", "Ruby", "API documentation browser라 개발자용 참조 위키의 탐색 구조를 비교하기 좋다."],
         ],
       },
       links: [
         {
-          description: "topic:documentation, stars:>1000, pushed:>2026-06-01 조건으로 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Adocumentation+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          description: "topic:documentation, stars:>1000, pushed:>2026-07-01 조건으로 확인한 검색 결과다.",
+          href: "https://github.com/search?q=topic%3Adocumentation+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "documentation 검색",
           variant: "external",
         },
