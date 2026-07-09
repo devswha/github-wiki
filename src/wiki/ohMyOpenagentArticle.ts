@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-07-07T01:02:31.000Z",
+  modifiedAt: "2026-07-09T01:05:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -39,8 +39,8 @@ export const ohMyOpenagentArticle = {
     },
     {
       label: "Latest release",
-      value: "v4.15.1",
-      valueHref: "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v4.15.1",
+      value: "v4.16.0",
+      valueHref: "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v4.16.0",
     },
     { label: "Links", value: "" },
   ],

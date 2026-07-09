@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const trendingRepositoriesArticle = {
   slug: "Github.wiki/trending-repositories",
   title: "트렌딩 저장소 조사",
-  modifiedAt: "2026-06-22T04:08:16.000Z",
+  modifiedAt: "2026-07-09T01:05:00.000Z",
   categories: [
     { label: "Github.wiki", path: "/w/category/github-wiki" },
     { label: "저장소 문서", path: "/w/category/repository-article" },
@@ -35,7 +35,7 @@ export const trendingRepositoriesArticle = {
       id: "overview",
       title: "개요",
       body: [
-        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-06-22 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
+        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-07-09 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
         "선정 기준은 별 수만이 아니라 Github.wiki의 기존 문서 축인 AI 에이전트, 개발 워크플로우, 문서화 도구와의 관련성이다. 시스템 프롬프트 덤프처럼 공개 재배포 리스크가 큰 저장소는 후보에서 제외한다.",
       ],
     },
@@ -43,7 +43,7 @@ export const trendingRepositoriesArticle = {
       id: "agent-tools",
       title: "AI 에이전트와 개발 도구 후보",
       body: [
-        "2026-06-22에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, agentic coding 쿼리를 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
+        "2026-07-09에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, documentation 쿼리를 다시 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
       ],
       table: {
         caption: "AI 에이전트 / 개발 도구 후보",
@@ -51,9 +51,9 @@ export const trendingRepositoriesArticle = {
         rows: [
           ["NousResearch/hermes-agent", "Python", "skills, memory, tools를 묶은 개인 에이전트 런타임 계열이다."],
           ["OpenHands/OpenHands", "Python", "AI-driven development를 전면에 둔 오픈소스 코딩 에이전트다."],
+          ["shareAI-lab/learn-claude-code", "Python", "Bash 기반 nano Claude Code식 agent harness를 표방해 학습용 비교 후보로 보인다."],
           ["daytonaio/daytona", "TypeScript", "AI 생성 코드 실행용 보안 인프라라는 포지션이 강하다."],
-          ["anomalyco/opencode", "TypeScript", "오픈소스 코딩 에이전트 계열이라 기존 OpenCode 확장 문서와 연결된다."],
-          ["obra/superpowers", "Shell", "agentic skills framework와 개발 방법론을 표방한다."],
+          ["rtk-ai/rtk", "Rust", "개발 명령 프록시로 LLM token consumption 절감을 내세워 coding-agent 운영 문맥과 맞는다."],
         ],
       },
       links: [
@@ -75,7 +75,7 @@ export const trendingRepositoriesArticle = {
       id: "documentation-tools",
       title: "문서화 도구 후보",
       body: [
-        "문서화 축에서는 Storybook, Mermaid, Docusaurus, AppFlowy, tldr-pages가 반복적으로 상위권에 잡힌다. Github.wiki가 저장소 설명 위키라는 점을 고려하면, 문서 생성이나 지식 정리 경험을 비교하는 문서 후보로 쓸 수 있다.",
+        "문서화 축에서는 Storybook, Mermaid, AppFlowy, Docusaurus, tldr-pages가 반복적으로 상위권에 잡힌다. Github.wiki가 저장소 설명 위키라는 점을 고려하면, 문서 생성이나 지식 정리 경험을 비교하는 문서 후보로 쓸 수 있다.",
       ],
       table: {
         caption: "문서화 관련 후보",

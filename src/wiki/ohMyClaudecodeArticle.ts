@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyClaudecodeArticle = {
   slug: "Yeachan-Heo/oh-my-claudecode",
   title: "oh-my-claudecode",
-  modifiedAt: "2026-07-07T01:02:31.000Z",
+  modifiedAt: "2026-07-09T01:05:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "Claude Code 확장", path: "/w/category/claude-code-extension" },
@@ -39,8 +39,8 @@ export const ohMyClaudecodeArticle = {
     },
     {
       label: "Latest release",
-      value: "v4.15.2",
-      valueHref: "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v4.15.2",
+      value: "v4.15.3",
+      valueHref: "https://github.com/Yeachan-Heo/oh-my-claudecode/releases/tag/v4.15.3",
     },
     { label: "Links", value: "" },
   ],
