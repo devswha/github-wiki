@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const hermesAgentArticle = {
   slug: "NousResearch/hermes-agent",
   title: "hermes-agent",
-  modifiedAt: "2026-07-04T01:02:58.000Z",
+  modifiedAt: "2026-07-09T01:05:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -39,8 +39,8 @@ export const hermesAgentArticle = {
     },
     {
       label: "Latest release",
-      value: "v2026.7.1 / v0.18.0",
-      valueHref: "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1",
+      value: "v2026.7.7.2 / v0.18.2",
+      valueHref: "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2",
     },
     {
       label: "Links",
