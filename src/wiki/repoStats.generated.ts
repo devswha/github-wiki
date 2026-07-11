@@ -5,243 +5,243 @@ import type { RepoStat } from "./repoStats";
 
 export const repoStats: Record<string, RepoStat> = {
   "Aider-AI/aider": {
-    "stars": 47143,
-    "forks": 4706,
+    "stars": 47260,
+    "forks": 4717,
     "pushedAt": "2026-05-22T14:02:20Z",
-    "fetchedAt": "2026-07-07"
+    "fetchedAt": "2026-07-11"
   },
   "BerriAI/litellm": {
-    "stars": 52854,
-    "forks": 9536,
-    "pushedAt": "2026-07-07T12:47:04Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 53226,
+    "forks": 9651,
+    "pushedAt": "2026-07-11T01:02:06Z",
+    "fetchedAt": "2026-07-11"
   },
   "CherryHQ/cherry-studio": {
-    "stars": 48261,
-    "forks": 4586,
-    "pushedAt": "2026-07-07T12:40:04Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 48418,
+    "forks": 4598,
+    "pushedAt": "2026-07-11T01:00:17Z",
+    "fetchedAt": "2026-07-11"
   },
   "CopilotKit/CopilotKit": {
-    "stars": 35816,
-    "forks": 4437,
-    "pushedAt": "2026-07-07T10:49:05Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 35910,
+    "forks": 4438,
+    "pushedAt": "2026-07-11T00:47:09Z",
+    "fetchedAt": "2026-07-11"
   },
   "HKUDS/nanobot": {
-    "stars": 45098,
-    "forks": 7957,
-    "pushedAt": "2026-07-07T10:45:00Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 45225,
+    "forks": 7986,
+    "pushedAt": "2026-07-10T17:14:52Z",
+    "fetchedAt": "2026-07-11"
   },
   "NomaDamas/k-skill": {
-    "stars": 6097,
-    "forks": 688,
-    "pushedAt": "2026-07-07T08:02:09Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 6148,
+    "forks": 695,
+    "pushedAt": "2026-07-10T17:10:53Z",
+    "fetchedAt": "2026-07-11"
   },
   "NousResearch/hermes-agent": {
-    "stars": 210743,
-    "forks": 38644,
-    "pushedAt": "2026-07-07T13:15:55Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 212772,
+    "forks": 39282,
+    "pushedAt": "2026-07-11T00:07:35Z",
+    "fetchedAt": "2026-07-11"
   },
   "OpenHands/OpenHands": {
-    "stars": 79753,
-    "forks": 10170,
-    "pushedAt": "2026-07-07T12:58:24Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 80380,
+    "forks": 10255,
+    "pushedAt": "2026-07-10T23:37:20Z",
+    "fetchedAt": "2026-07-11"
   },
   "RooCodeInc/Roo-Code": {
-    "stars": 24311,
-    "forks": 3355,
+    "stars": 24317,
+    "forks": 3363,
     "pushedAt": "2026-05-15T18:08:47Z",
-    "fetchedAt": "2026-07-07"
+    "fetchedAt": "2026-07-11"
   },
   "SWE-agent/SWE-agent": {
-    "stars": 19723,
-    "forks": 2154,
-    "pushedAt": "2026-07-06T16:03:50Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 19762,
+    "forks": 2159,
+    "pushedAt": "2026-07-07T15:57:40Z",
+    "fetchedAt": "2026-07-11"
   },
   "Significant-Gravitas/AutoGPT": {
-    "stars": 185416,
-    "forks": 46125,
-    "pushedAt": "2026-07-07T11:18:33Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 185454,
+    "forks": 46114,
+    "pushedAt": "2026-07-11T00:54:34Z",
+    "fetchedAt": "2026-07-11"
   },
   "Yeachan-Heo/gajae-code": {
-    "stars": 1672,
-    "forks": 240,
-    "pushedAt": "2026-07-07T13:10:34Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 1766,
+    "forks": 263,
+    "pushedAt": "2026-07-11T00:41:05Z",
+    "fetchedAt": "2026-07-11"
   },
   "Yeachan-Heo/oh-my-claudecode": {
-    "stars": 37510,
-    "forks": 3379,
-    "pushedAt": "2026-07-07T11:15:45Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 37649,
+    "forks": 3399,
+    "pushedAt": "2026-07-10T17:21:43Z",
+    "fetchedAt": "2026-07-11"
   },
   "Yeachan-Heo/oh-my-codex": {
-    "stars": 31758,
-    "forks": 2462,
-    "pushedAt": "2026-07-07T05:17:44Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 31897,
+    "forks": 2466,
+    "pushedAt": "2026-07-10T23:44:01Z",
+    "fetchedAt": "2026-07-11"
   },
   "aaif-goose/goose": {
-    "stars": 50767,
-    "forks": 5467,
-    "pushedAt": "2026-07-07T03:36:00Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 51044,
+    "forks": 5652,
+    "pushedAt": "2026-07-11T00:53:18Z",
+    "fetchedAt": "2026-07-11"
   },
   "anomalyco/opencode": {
-    "stars": 183253,
-    "forks": 22722,
-    "pushedAt": "2026-07-07T13:18:13Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 184561,
+    "forks": 23006,
+    "pushedAt": "2026-07-11T01:02:03Z",
+    "fetchedAt": "2026-07-11"
   },
   "anthropics/claude-code": {
-    "stars": 136656,
-    "forks": 21956,
-    "pushedAt": "2026-07-06T22:51:16Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 137317,
+    "forks": 22167,
+    "pushedAt": "2026-07-11T00:52:10Z",
+    "fetchedAt": "2026-07-11"
   },
   "browser-use/browser-use": {
-    "stars": 103270,
-    "forks": 11427,
-    "pushedAt": "2026-07-07T02:59:23Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 104138,
+    "forks": 11482,
+    "pushedAt": "2026-07-11T00:47:15Z",
+    "fetchedAt": "2026-07-11"
   },
   "bytedance/deer-flow": {
-    "stars": 76343,
-    "forks": 10353,
-    "pushedAt": "2026-07-07T11:55:34Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 76736,
+    "forks": 10417,
+    "pushedAt": "2026-07-11T00:54:46Z",
+    "fetchedAt": "2026-07-11"
   },
   "cline/cline": {
-    "stars": 64398,
-    "forks": 6861,
-    "pushedAt": "2026-07-07T07:15:53Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 64531,
+    "forks": 6888,
+    "pushedAt": "2026-07-11T00:41:57Z",
+    "fetchedAt": "2026-07-11"
   },
   "code-yeongyu/lazycodex": {
-    "stars": 2521,
-    "forks": 161,
-    "pushedAt": "2026-07-03T12:15:12Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 2631,
+    "forks": 170,
+    "pushedAt": "2026-07-10T14:06:12Z",
+    "fetchedAt": "2026-07-11"
   },
   "code-yeongyu/oh-my-openagent": {
-    "stars": 65143,
-    "forks": 5319,
-    "pushedAt": "2026-07-07T07:37:32Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 65501,
+    "forks": 5343,
+    "pushedAt": "2026-07-10T22:09:56Z",
+    "fetchedAt": "2026-07-11"
   },
   "crewAIInc/crewAI": {
-    "stars": 55071,
-    "forks": 7737,
-    "pushedAt": "2026-07-07T07:35:10Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 55316,
+    "forks": 7789,
+    "pushedAt": "2026-07-11T00:37:38Z",
+    "fetchedAt": "2026-07-11"
   },
   "danny-avila/LibreChat": {
-    "stars": 40390,
-    "forks": 8276,
-    "pushedAt": "2026-07-07T12:50:01Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 40560,
+    "forks": 8329,
+    "pushedAt": "2026-07-10T19:47:30Z",
+    "fetchedAt": "2026-07-11"
   },
   "devswha/patina": {
-    "stars": 240,
-    "forks": 26,
-    "pushedAt": "2026-07-07T11:08:21Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 257,
+    "forks": 28,
+    "pushedAt": "2026-07-10T14:53:42Z",
+    "fetchedAt": "2026-07-11"
   },
   "earendil-works/pi": {
-    "stars": 68332,
-    "forks": 8396,
-    "pushedAt": "2026-07-07T12:30:32Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 69500,
+    "forks": 8539,
+    "pushedAt": "2026-07-10T22:01:49Z",
+    "fetchedAt": "2026-07-11"
   },
   "facebook/react": {
-    "stars": 246266,
-    "forks": 51234,
-    "pushedAt": "2026-07-07T05:31:01Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 246377,
+    "forks": 51168,
+    "pushedAt": "2026-07-10T03:04:54Z",
+    "fetchedAt": "2026-07-11"
   },
   "firecrawl/firecrawl": {
-    "stars": 146950,
-    "forks": 8444,
-    "pushedAt": "2026-07-07T12:44:14Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 148927,
+    "forks": 8513,
+    "pushedAt": "2026-07-10T23:44:18Z",
+    "fetchedAt": "2026-07-11"
   },
   "google-gemini/gemini-cli": {
-    "stars": 105822,
-    "forks": 14228,
-    "pushedAt": "2026-07-07T01:56:36Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 105900,
+    "forks": 14236,
+    "pushedAt": "2026-07-10T17:23:27Z",
+    "fetchedAt": "2026-07-11"
   },
   "infiniflow/ragflow": {
-    "stars": 84503,
-    "forks": 9843,
-    "pushedAt": "2026-07-07T12:45:35Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 84778,
+    "forks": 9898,
+    "pushedAt": "2026-07-10T15:24:04Z",
+    "fetchedAt": "2026-07-11"
   },
   "langchain-ai/langchain": {
-    "stars": 141184,
-    "forks": 23465,
-    "pushedAt": "2026-07-07T09:07:01Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 141484,
+    "forks": 23509,
+    "pushedAt": "2026-07-10T23:06:20Z",
+    "fetchedAt": "2026-07-11"
   },
   "langgenius/dify": {
-    "stars": 148034,
-    "forks": 23317,
-    "pushedAt": "2026-07-07T12:52:17Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 148438,
+    "forks": 23397,
+    "pushedAt": "2026-07-10T22:12:52Z",
+    "fetchedAt": "2026-07-11"
   },
   "microsoft/autogen": {
-    "stars": 59552,
-    "forks": 8964,
+    "stars": 59645,
+    "forks": 8978,
     "pushedAt": "2026-04-15T11:59:09Z",
-    "fetchedAt": "2026-07-07"
+    "fetchedAt": "2026-07-11"
   },
   "ollama/ollama": {
-    "stars": 175642,
-    "forks": 16869,
-    "pushedAt": "2026-07-07T01:11:57Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 175892,
+    "forks": 16923,
+    "pushedAt": "2026-07-10T00:42:15Z",
+    "fetchedAt": "2026-07-11"
   },
   "omnigent-ai/omnigent": {
-    "stars": 6543,
-    "forks": 872,
-    "pushedAt": "2026-07-07T12:47:39Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 7008,
+    "forks": 945,
+    "pushedAt": "2026-07-10T23:50:11Z",
+    "fetchedAt": "2026-07-11"
   },
   "open-webui/open-webui": {
-    "stars": 144546,
-    "forks": 20892,
-    "pushedAt": "2026-07-02T17:38:23Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 145000,
+    "forks": 20994,
+    "pushedAt": "2026-07-10T23:32:22Z",
+    "fetchedAt": "2026-07-11"
   },
   "openai/codex": {
-    "stars": 96025,
-    "forks": 14250,
-    "pushedAt": "2026-07-07T13:14:01Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 97009,
+    "forks": 14409,
+    "pushedAt": "2026-07-11T00:12:10Z",
+    "fetchedAt": "2026-07-11"
   },
   "openinterpreter/openinterpreter": {
-    "stars": 64295,
-    "forks": 5595,
+    "stars": 64332,
+    "forks": 5606,
     "pushedAt": "2026-07-07T00:59:25Z",
-    "fetchedAt": "2026-07-07"
+    "fetchedAt": "2026-07-11"
   },
   "unclecode/crawl4ai": {
-    "stars": 71261,
-    "forks": 7326,
-    "pushedAt": "2026-07-07T08:24:02Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 72239,
+    "forks": 7403,
+    "pushedAt": "2026-07-09T14:46:56Z",
+    "fetchedAt": "2026-07-11"
   },
   "vllm-project/vllm": {
-    "stars": 85590,
-    "forks": 19064,
-    "pushedAt": "2026-07-07T12:52:43Z",
-    "fetchedAt": "2026-07-07"
+    "stars": 85931,
+    "forks": 19250,
+    "pushedAt": "2026-07-11T00:16:50Z",
+    "fetchedAt": "2026-07-11"
   }
 };
