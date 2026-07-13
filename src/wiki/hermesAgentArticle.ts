@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const hermesAgentArticle = {
   slug: "NousResearch/hermes-agent",
   title: "hermes-agent",
-  modifiedAt: "2026-07-04T01:02:58.000Z",
+  modifiedAt: "2026-07-13T01:15:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -39,8 +39,8 @@ export const hermesAgentArticle = {
     },
     {
       label: "Latest release",
-      value: "v2026.7.1 / v0.18.0",
-      valueHref: "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.1",
+      value: "v2026.7.7.2 / v0.18.2",
+      valueHref: "https://github.com/NousResearch/hermes-agent/releases/tag/v2026.7.7.2",
     },
     {
       label: "Links",
@@ -118,7 +118,7 @@ export const hermesAgentArticle = {
       id: "release",
       title: "최근 릴리스",
       body: [
-        "GitHub 릴리스 기준 최신 버전은 v2026.7.1이며, 릴리스 이름은 Hermes Agent v0.18.0 (2026.7.1) — The Judgment Release다. 공개일은 2026-07-01로 기록되어 있다.",
+        "GitHub 릴리스 기준 최신 버전은 v2026.7.7.2이며, 릴리스 이름은 Hermes Agent v0.18.2 (2026.7.7.2)다. 공개일은 2026-07-08로 기록되어 있고, v0.18.1 이후 tagged-release Docker build에 필요한 WhatsApp Baileys 의존성 수정을 담은 같은 날 패치다.",
         "GitHub Search API에서 topic:ai-agent와 2026-06 이후 push 조건으로 조회했을 때 Hermes Agent는 높은 star count와 최근 activity를 동시에 보이는 저장소로 잡혔다. 이 문서가 추가된 이유는 단순 인기보다, 장기 기억형 에이전트와 예약 자동화라는 이 위키의 기존 관심사와 직접 맞닿기 때문이다.",
       ],
     },

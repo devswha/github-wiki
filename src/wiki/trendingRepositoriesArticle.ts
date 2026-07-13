@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const trendingRepositoriesArticle = {
   slug: "Github.wiki/trending-repositories",
   title: "트렌딩 저장소 조사",
-  modifiedAt: "2026-06-22T04:08:16.000Z",
+  modifiedAt: "2026-07-13T01:15:00.000Z",
   categories: [
     { label: "Github.wiki", path: "/w/category/github-wiki" },
     { label: "저장소 문서", path: "/w/category/repository-article" },
@@ -24,7 +24,7 @@ export const trendingRepositoriesArticle = {
     {
       label: "Links",
       links: [
-        { label: "GitHub search", href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc" },
+        { label: "GitHub search", href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc" },
         { label: "github-wiki", href: "https://github.com/devswha/github-wiki" },
       ],
       value: "",
@@ -35,7 +35,7 @@ export const trendingRepositoriesArticle = {
       id: "overview",
       title: "개요",
       body: [
-        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-06-22 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
+        "이 문서는 Github.wiki의 자동 유지보수 루프가 새 저장소 문서 후보를 고를 때 참고하는 관찰 목록이다. 실시간 순위표가 아니라, 2026-07-13 기준 GitHub 검색 결과에서 위키 주제와 맞는 저장소를 추려 둔 운영 메모에 가깝다.",
         "선정 기준은 별 수만이 아니라 Github.wiki의 기존 문서 축인 AI 에이전트, 개발 워크플로우, 문서화 도구와의 관련성이다. 시스템 프롬프트 덤프처럼 공개 재배포 리스크가 큰 저장소는 후보에서 제외한다.",
       ],
     },
@@ -43,7 +43,7 @@ export const trendingRepositoriesArticle = {
       id: "agent-tools",
       title: "AI 에이전트와 개발 도구 후보",
       body: [
-        "2026-06-22에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, agentic coding 쿼리를 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
+        "2026-07-13에 GitHub repositories search API로 topic:ai-agent, topic:developer-tools, agentic coding 쿼리를 확인했다. 아래 저장소들은 최근 pushed 조건과 별 수 기준을 통과했고, 기존 oh-my-* / lazycodex 계열 문서와 같이 읽을 만한 후보로 보인다.",
       ],
       table: {
         caption: "AI 에이전트 / 개발 도구 후보",
@@ -54,18 +54,20 @@ export const trendingRepositoriesArticle = {
           ["daytonaio/daytona", "TypeScript", "AI 생성 코드 실행용 보안 인프라라는 포지션이 강하다."],
           ["anomalyco/opencode", "TypeScript", "오픈소스 코딩 에이전트 계열이라 기존 OpenCode 확장 문서와 연결된다."],
           ["obra/superpowers", "Shell", "agentic skills framework와 개발 방법론을 표방한다."],
+          ["affaan-m/ECC", "JavaScript", "agent harness performance optimization, skills, memory, security를 내세워 기존 에이전트 하네스 문서와 비교해 볼 만하다."],
+          ["Panniantong/Agent-Reach", "Python", "여러 공개 웹 표면을 읽고 검색하는 agent용 CLI를 표방해 브라우징·리서치 도구 축과 맞닿는다."],
         ],
       },
       links: [
         {
-          description: "topic:ai-agent, stars:>1000, pushed:>2026-06-01 조건으로 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          description: "topic:ai-agent, stars:>1000, pushed:>2026-07-01 조건으로 확인한 검색 결과다.",
+          href: "https://github.com/search?q=topic%3Aai-agent+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "AI agent 검색",
           variant: "external",
         },
         {
           description: "developer-tools 주제에서 최근 갱신된 대형 저장소를 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Adeveloper-tools+stars%3A%3E5000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          href: "https://github.com/search?q=topic%3Adeveloper-tools+stars%3A%3E5000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "developer tools 검색",
           variant: "external",
         },
@@ -90,8 +92,8 @@ export const trendingRepositoriesArticle = {
       },
       links: [
         {
-          description: "topic:documentation, stars:>1000, pushed:>2026-06-01 조건으로 확인한 검색 결과다.",
-          href: "https://github.com/search?q=topic%3Adocumentation+stars%3A%3E1000+pushed%3A%3E2026-06-01&type=repositories&s=stars&o=desc",
+          description: "topic:documentation, stars:>1000, pushed:>2026-07-01 조건으로 확인한 검색 결과다.",
+          href: "https://github.com/search?q=topic%3Adocumentation+stars%3A%3E1000+pushed%3A%3E2026-07-01&type=repositories&s=stars&o=desc",
           label: "documentation 검색",
           variant: "external",
         },

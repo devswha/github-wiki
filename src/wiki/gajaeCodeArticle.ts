@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const gajaeCodeArticle = {
   slug: "Yeachan-Heo/gajae-code",
   title: "gajae-code",
-  modifiedAt: "2026-07-07T01:02:31.000Z",
+  modifiedAt: "2026-07-13T01:15:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "CLI 도구", path: "/w/category/cli-tool" },
@@ -39,8 +39,8 @@ export const gajaeCodeArticle = {
     },
     {
       label: "Latest release",
-      value: "v0.8.2",
-      valueHref: "https://github.com/Yeachan-Heo/gajae-code/releases/tag/v0.8.2",
+      value: "v0.10.0",
+      valueHref: "https://github.com/Yeachan-Heo/gajae-code/releases/tag/v0.10.0",
     },
     { label: "Links", value: "" },
   ],
@@ -124,7 +124,7 @@ export const gajaeCodeArticle = {
       title: "재시도와 검증",
       body: [
         "README는 session auto-retry와 provider retry budget을 별도 계층으로 설명한다. requestMaxRetries는 stream이 열리기 전 provider SDK/fetch 재시도에, streamMaxRetries는 replay-safe stream 실패에 쓰인다.",
-        "2026-07-06 v0.8.2 릴리스는 goal completion hook crash, glob path 중복, boolean flag 인식, composer/session trail, Telegram session command gate 같은 실행 안정성 수정을 포함한다.",
+        "2026-07-12 v0.10.0 릴리스는 session cache-miss cost summary, transcript cache warning, launch-time update contract 문서화 같은 세션 관찰성과 운영 계약 쪽 변경을 포함한다.",
         "개발 문서에서는 workflow definition이나 rebrand surface 변경 시 visible definition, gate 검증, rebrand inventory, default definition 테스트를 실행하라고 안내한다. 즉 이 프로젝트의 기본값은 소스에 포함된 정의와 검증 gate를 함께 유지하는 방식이다.",
         "실행 로그는 append-only로 쌓여서, 세션이 중간에 끊겨도 replay-safe하게 같은 지점에서 이어진다.",
       ],
