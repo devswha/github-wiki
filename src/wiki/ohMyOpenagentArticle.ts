@@ -3,7 +3,7 @@ import type { WikiArticle } from "./types";
 export const ohMyOpenagentArticle = {
   slug: "code-yeongyu/oh-my-openagent",
   title: "oh-my-openagent",
-  modifiedAt: "2026-07-07T01:02:31.000Z",
+  modifiedAt: "2026-07-13T01:15:00.000Z",
   categories: [
     { label: "AI 에이전트 도구", path: "/w/category/ai-agent-tool" },
     { label: "OpenCode 플러그인", path: "/w/category/opencode-plugin" },
@@ -39,8 +39,8 @@ export const ohMyOpenagentArticle = {
     },
     {
       label: "Latest release",
-      value: "v4.15.1",
-      valueHref: "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v4.15.1",
+      value: "v4.17.0",
+      valueHref: "https://github.com/code-yeongyu/oh-my-openagent/releases/tag/v4.17.0",
     },
     { label: "Links", value: "" },
   ],
@@ -95,7 +95,7 @@ export const ohMyOpenagentArticle = {
       title: "내장 기능 지도",
       body: [
         "하이라이트 표는 Discipline Agents, Team Mode, ultrawork, IntentGate, Hash-Anchored Edit Tool, LSP + AST-Grep, Background Agents, Built-in MCPs, Ralph Loop, Todo Enforcer, Comment Checker, Tmux Integration을 나열한다.",
-        "2026-07-01 v4.15.1 릴리스는 stale marketplace-managed LazyCodex install repair와 Codex skill discovery 정리를 중심으로 한 패치 릴리스다.",
+        "2026-07-11 v4.17.0 릴리스는 LazyCodex worker 선택을 실제 변경 규모와 위험도에 맞춰 low/medium/high difficulty로 나누는 쪽을 전면에 둔다. 설치 기본값과 탐색·심층 작업 라우팅도 함께 손본 릴리스다.",
         "README는 Claude Code compatibility도 강조한다. hook, command, skill, MCP, plugin을 그대로 동작시키는 호환성을 주장하고, skill-embedded MCPs는 필요한 task scope에서만 MCP server를 올렸다 내리는 방식으로 context budget 낭비를 줄인다고 설명한다.",
         "모델 카탈로그는 models.dev 데이터를 참고해 카테고리별로 어떤 모델을 붙일지 매핑한다.",
         "백그라운드 에이전트와 도구 출력은 NDJSON 스트림으로 흘러, 한 줄에 한 이벤트씩 파싱하기 쉽게 남는다.",
