@@ -66,7 +66,7 @@ const upstreamArticleCases = [
     owner: "Yeachan-Heo",
     repository: "oh-my-codex",
     expectedText: "$ultragoal",
-    sourceTerms: ["codex login status", "context-hooks", "omx exec", "v0.19.0"],
+    sourceTerms: ["codex login status", "context-hooks", "omx exec", "v0.20.1"],
     expectedToc: [
       "Codex CLI 전제",
       "인증 확인",
